@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria Ardillita | Zapatitos  para Bebés</title>
+    <meta name="description" content="Zapatitos artesanales de máxima calidad para los primeros pasos de tu bebé. Materiales ecológicos y diseños únicos.">
+    
+    <!-- Preload de fuentes y recursos críticos -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    
+    <!-- Favicon y meta tags para redes sociales -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#FFB6C1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pequenospasos.com/">
+    <meta property="og:title" content="Pequeños Pasos | Zapatitos Premium para Bebés">
+    <meta property="og:description" content="Zapatitos artesanales de máxima calidad para los primeros pasos de tu bebé. Materiales ecológicos y diseños únicos.">
+    <meta property="og:image" content="https://pequenospasos.com/images/social-share.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://pequenospasos.com/">
+    <meta property="twitter:title" content="Pequeños Pasos | Zapatitos Premium para Bebés">
+    <meta property="twitter:description" content="Zapatitos artesanales de máxima calidad para los primeros pasos de tu bebé. Materiales ecológicos y diseños únicos.">
+    <meta property="twitter:image" content="https://pequenospasos.com/images/social-share.jpg">
+
+    <link rel="shortcut icon" href="assets/img/HERO/ardilla.png" type="image/x-icon">
+
+
+    <!-- Tailwind CSS con configuración personalizada -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#FFF0F3',
+                            100: '#FFD6E0',
+                            200: '#FFB6C1',
+                            300: '#FF8FA3',
+                            400: '#FF758F',
+                            500: '#FF477E',
+                            600: '#EB0055',
+                            700: '#C7004C',
+                            800: '#A80040',
+                            900: '#870033',
+                            1000: '#25D366',
+                        },
+                        secondary: {
+                            50: '#F0F9FF',
+                            100: '#E0F2FE',
+                            200: '#BAE6FD',
+                            300: '#7DD3FC',
+                            400: '#38BDF8',
+                            500: '#0EA5E9',
+                            600: '#0284C7',
+                            700: '#0369A1',
+                            800: '#075985',
+                            900: '#0C4A6E',
+                            1000: '#FF477E',
+                        },
+                        accent: {
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+
+
+
+
+    <!-- CSS personalizado optimizado -->
+    <style>
+    /* Estilos base optimizados */
+    body {
+        background-color: #fff;
+        color: #374151; /* Tailwind text-gray-700 */
+        font-family: 'Quicksand', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        text-rendering: optimizeLegibility;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', 'Quicksand', sans-serif;
+        color: #1f2937; /* Tailwind text-gray-800 */
+        letter-spacing: -0.015em; /* tracking-tight */
+    }
+
+    .transition-all-slow {
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .shadow-soft {
+        box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+    }
+
+    .shadow-hover {
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+    }
+
+    .glass {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        background-color: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .img-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img-contain {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    @keyframes wiggle {
+        0%, 100% { transform: rotate(-3deg); }
+        50% { transform: rotate(3deg); }
+    }
+
+    .animate-wiggle {
+        animation: wiggle 1s ease-in-out infinite;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .wave svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+
+    .wave .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    .mobile-menu.open .skeleton {
+        background-color: #e5e7eb; 
+        animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .skeleton {
+        background-color: #e5e7eb;
+        animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .product-card {
+        perspective: 1000px;
+    }
+
+    .product-inner {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .product-card:hover .product-inner {
+        transform: rotateY(10deg);
+    }
+
+    .neon-effect {
+        text-shadow: 0 0 5px rgba(255, 182, 193, 0.5), 0 0 10px rgba(255, 182, 193, 0.3);
+    }
+
+    .gradient-animate {
+        background-size: 200% 200%;
+        animation: gradient 3s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+</style>
+
+
+
+
+
+
+</head>
+<body class="relative">
+    <!-- Preloader (mejorado) -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500">
+        <div class="relative w-24 h-24 mb-4">
+    <div class="absolute inset-0 rounded-full border-4 border-t-primary-500 border-r-primary-300 border-b-primary-400 border-l-primary-200 animate-spin"></div>
+    <div class="absolute inset-4 rounded-full border-4 border-transparent"></div>
+    <div class="absolute inset-8 flex items-center justify-center">
+        <img 
+            src="../assets/img/HERO/ardilla.png" 
+            alt="Icono Ardillita"
+            class="w-10 h-10 animate-pulse-slow"
+        >
+    </div>
+</div>
+<h2 class="text-xl font-heading text-gray-700">Zapateria Ardillita...</h2>
+    </div>
+
+    <!-- Header/Navbar (mejorado con mega menú) -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="flex justify-between items-center py-3">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="text-2xl font-heading font-bold text-gray-800">Zapateria<span class="text-primary-500">Ardillita</span></span>
+                </a>
+                
+                <!-- Menú principal desktop -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Inicio</a>
+                    <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niños</a>
+                    <a href="#categories" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niñas</a>
+                    <a href="#about" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Primeros Pasos</a>
+                    <a href="#testimonials" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">caminantes</a>
+                    <a href="#testimonials" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Nosotros</a>
+                    <a href="#contact" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Contacto</a>
+                </nav>
+                
+                <!-- Iconos de acción -->
+                <div class="flex items-center space-x-4">
+                    
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="wishlist-btn">
+                        <i class="far fa-heart text-xl"></i>
+                        <span class="absolute -top-1 -right-1 bg-primary-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                    </button>
+                    
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="cart-btn">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute -top-1 -right-1 bg-primary-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </button>
+                    
+                    <button class="p-2 text-gray-600 hover:text-primary-500 lg:hidden" id="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    
+                    <a href="#" class="hidden md:flex items-center space-x-1 bg-gradient-to-r from-primary-400 to-primary-600 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all hover:scale-105">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Mi Cuenta</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Menú móvil (mejorado) -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-3">
+                <div class="grid grid-cols-1 divide-y divide-gray-100">
+                    <a href="#" class="py-3 text-gray-700 font-medium">Inicio</a>
+                    <a href="#" class="py-3 text-gray-700 font-medium">Niños</a>
+                    <a href="#categories" class="py-3 text-gray-700 font-medium">Niñas</a>
+                    <a href="#about" class="py-3 text-gray-700 font-medium">Primeros Pasos</a>
+                    <a href="#testimonials" class="py-3 text-gray-700 font-medium">Caminantes</a>
+                    <a href="#testimonials" class="py-3 text-gray-700 font-medium">Nosotros</a>
+                    <a href="#contact" class="py-3 text-gray-700 font-medium">Contacto</a>
+                    
+                    <div class="py-3 flex space-x-4">
+                        <a href="#" class="bg-secondary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fas fa-store mr-2"></i>Tienda
+                        </a>
+                        <a href="#" class="bg-primary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fab fa-whatsapp mr-2"></i> Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1>
+        hola mundo
+    </h1>
+
+</html>
+
+
+
+
+
+
