@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Zapateria Ardillita</title>
+    <meta name="description" content="Conoce más sobre Zapateria Ardillita, nuestra historia y compromiso con la calidad en zapatitos para bebés.">
+    
+    <!-- Preload de fuentes y recursos críticos -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    
+    <!-- Favicon y meta tags para redes sociales -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#FFB6C1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zapateriaardillita.com/nosotros">
+    <meta property="og:title" content="Nosotros | Zapateria Ardillita">
+    <meta property="og:description" content="Conoce más sobre Zapateria Ardillita, nuestra historia y compromiso con la calidad en zapatitos para bebés.">
+    <meta property="og:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zapateriaardillita.com/nosotros">
+    <meta property="twitter:title" content="Nosotros | Zapateria Ardillita">
+    <meta property="twitter:description" content="Conoce más sobre Zapateria Ardillita, nuestra historia y compromiso con la calidad en zapatitos para bebés.">
+    <meta property="twitter:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+
+    <link rel="shortcut icon" href="assets/img/HERO/ardilla.png" type="image/x-icon">
+
+    <!-- Tailwind CSS con configuración personalizada -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#FFF0F3',
+                            100: '#FFD6E0',
+                            200: '#FFB6C1',
+                            300: '#FF8FA3',
+                            400: '#FF758F',
+                            500: '#FF477E',
+                            600: '#EB0055',
+                            700: '#C7004C',
+                            800: '#A80040',
+                            900: '#870033',
+                            1000: '#25D366',
+                        },
+                        secondary: {
+                            50: '#F0F9FF',
+                            100: '#E0F2FE',
+                            200: '#BAE6FD',
+                            300: '#7DD3FC',
+                            400: '#38BDF8',
+                            500: '#0EA5E9',
+                            600: '#0284C7',
+                            700: '#0369A1',
+                            800: '#075985',
+                            900: '#0C4A6E',
+                            1000: '#FF477E',
+                        },
+                        accent: {
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS personalizado optimizado -->
+    <style>
+    /* Estilos base optimizados */
+    body {
+        background-color: #fff;
+        color: #374151;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        text-rendering: optimizeLegibility;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', 'Quicksand', sans-serif;
+        color: #1f2937;
+        letter-spacing: -0.015em;
+    }
+
+    .transition-all-slow {
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .shadow-soft {
+        box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+    }
+
+    .shadow-hover {
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+    }
+
+    .glass {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        background-color: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .img-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img-contain {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    @keyframes wiggle {
+        0%, 100% { transform: rotate(-3deg); }
+        50% { transform: rotate(3deg); }
+    }
+
+    .animate-wiggle {
+        animation: wiggle 1s ease-in-out infinite;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .wave svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+
+    .wave .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    .mobile-menu.open .skeleton {
+        background-color: #e5e7eb; 
+        animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .skeleton {
+        background-color: #e5e7eb;
+        animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .product-card {
+        perspective: 1000px;
+    }
+
+    .product-inner {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .product-card:hover .product-inner {
+        transform: rotateY(10deg);
+    }
+
+    .neon-effect {
+        text-shadow: 0 0 5px rgba(255, 182, 193, 0.5), 0 0 10px rgba(255, 182, 193, 0.3);
+    }
+
+    .gradient-animate {
+        background-size: 200% 200%;
+        animation: gradient 3s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Estilos específicos para la página Nosotros */
+    .about-hero {
+        background: linear-gradient(135deg, rgba(255,182,193,0.1) 0%, rgba(255,255,255,0.8) 100%);
+    }
+
+    .team-member:hover img {
+        transform: scale(1.05);
+    }
+
+    .timeline-item:not(:last-child):after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -50px;
+        width: 2px;
+        height: 50px;
+        background-color: #FFB6C1;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body class="relative">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500">
+        <div class="relative w-24 h-24 mb-4">
+            <div class="absolute inset-0 rounded-full border-4 border-t-primary-500 border-r-primary-300 border-b-primary-400 border-l-primary-200 animate-spin"></div>
+            <div class="absolute inset-4 rounded-full border-4 border-transparent"></div>
+            <div class="absolute inset-8 flex items-center justify-center">
+                <img 
+                    src="assets/img/HERO/ardilla.png" 
+                    alt="Icono Ardillita"
+                    class="w-10 h-10 animate-pulse-slow"
+                >
+            </div>
+        </div>
+        <h2 class="text-xl font-heading text-gray-700">Zapateria Ardillita...</h2>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="flex justify-between items-center py-3">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-2xl font-heading font-bold text-gray-800">Zapateria<span class="text-primary-500">Ardillita</span></span>
+                </a>
+                
+                <!-- Menú principal desktop -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="../index.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Inicio</a>
+                    <a href="ninos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niños</a>
+                    <a href="ninas.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niñas</a>
+                    <a href="nacidos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Primeros Pasos</a>
+                    <a href="caminantes.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Caminantes</a>
+                    <a href="nosotros.html" class="px-4 py-2 text-primary-500 font-medium transition-all">Nosotros</a>
+                    <a href="#contact" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Contacto</a>
+                </nav>
+                
+                <!-- Iconos de acción -->
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="wishlist-btn">
+                        <i class="far fa-heart text-xl"></i>
+                    </button>
+                    
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="cart-btn">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                    </button>
+                    
+                    <button class="p-2 text-gray-600 hover:text-primary-500 lg:hidden" id="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    
+                    <a href="#" class="hidden md:flex items-center space-x-1 bg-gradient-to-r from-primary-400 to-primary-600 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all hover:scale-105">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Mi Cuenta</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-3">
+                <div class="grid grid-cols-1 divide-y divide-gray-100">
+                    <a href="../index.html" class="py-3 text-gray-700 font-medium">Inicio</a>
+                    <a href="ninos.html" class="py-3 text-gray-700 font-medium">Niños</a>
+                    <a href="ninas.html" class="py-3 text-gray-700 font-medium">Niñas</a>
+                    <a href="nacidos.html" class="py-3 text-gray-700 font-medium">Recien Nacidos</a>
+                    <a href="caminantes.html" class="py-3 text-gray-700 font-medium">Caminantes</a>
+                    <a href="nosotros.html" class="py-3 text-primary-500 font-medium">Nosotros</a>
+                    <a href="contacto.html" class="py-3 text-gray-700 font-medium">Contacto</a>
+                    
+                    <div class="py-3 flex space-x-4">
+                        <a href="#" class="bg-secondary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fas fa-store mr-2"></i>Tienda
+                        </a>
+                        <a href="#" class="bg-primary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fab fa-whatsapp mr-2"></i> Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="about-hero py-20 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-7xl">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 relative">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img src="../assets/img/NOSOTROS/nosotros.png" 
+                                 alt="Taller de Zapateria Ardillita" 
+                                 class="w-full h-auto rounded-2xl transition-all duration-500 hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>
+                            <div class="absolute bottom-6 left-6 text-white">
+                                <p class="text-sm font-medium">Nuestro taller artesanal</p>
+                                <p class="text-xs">Donde cada par es hecho con amor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
+                            Nuestra <span class="text-primary-500">Historia</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            En Zapateria Ardillita, comenzamos con un simple sueño: crear zapatitos que fueran tan suaves como el amor de mamá y tan resistentes como la curiosidad de un bebé. Lo que empezó como un pequeño taller familiar hoy es una marca reconocida por su calidad y diseño.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#mision" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-lg">
+                                Conoce más
+                            </a>
+                            <a href="#contact" class="border-2 border-primary-500 text-primary-500 hover:bg-primary-50 px-6 py-3 rounded-full font-medium transition-all">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Misión y Visión -->
+        <section id="mision" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestros <span class="text-primary-500">Pilares</span></h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Lo que nos guía cada día en nuestro trabajo</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary-100 p-3 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Misión</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Crear zapatitos para bebés que combinen diseño, comodidad y seguridad, utilizando materiales de la más alta calidad y procesos artesanales que respetan el medio ambiente. Queremos ser parte de esos primeros pasos tan especiales en la vida de cada niño.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary-100 p-3 rounded-full mr-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Visión</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Ser reconocidos como la marca líder en calzado infantil artesanal en Latinoamérica, expandiendo nuestro compromiso con la calidad y la innovación, mientras mantenemos nuestros valores de trabajo ético, sostenibilidad y atención personalizada a cada familia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestra Historia - Timeline -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestra <span class="text-primary-500">Trayectoria</span></h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Los hitos que han marcado nuestro camino</p>
+                </div>
+                
+                <div class="relative">
+                    <!-- Línea central -->
+                    <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-primary-200 transform -translate-x-1/2"></div>
+                    
+                    <!-- Items del timeline -->
+                    <div class="space-y-16 md:space-y-8">
+                        <!-- Item 1 -->
+                        <div class="relative md:flex items-center">
+                            <div class="md:w-1/2 md:pr-10 mb-6 md:mb-0 md:text-right">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">2004 - Los Inicios</h3>
+                                <p class="text-gray-600">
+                                    Comenzamos en un pequeño taller familiar, creando zapatitos a mano para los hijos de amigos y familiares. La demanda creció rápidamente gracias al boca a boca.
+                                </p>
+                            </div>
+                            <div class="hidden md:flex items-center justify-center md:w-1/12 px-4">
+                                <div class="w-6 h-6 rounded-full bg-primary-500 border-4 border-white shadow-md"></div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10">
+                                <div class="bg-white p-6 rounded-xl shadow-md">
+                                    <img src="../assets/img/NOSOTROS/1.jpeg" 
+                                         alt="Taller inicial" 
+                                         class="w-full h-48 object-cover rounded-lg mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="relative md:flex items-center">
+                            <div class="md:w-1/2 md:pr-10 mb-6 md:mb-0 order-1">
+                                <div class="bg-white p-6 rounded-xl shadow-md">
+                                    <img src="../assets/img/NOSOTROS/5.jpeg" 
+                                         alt="Primera tienda física" 
+                                         class="w-full h-48 object-cover rounded-lg mb-4">
+                                </div>
+                            </div>
+                            <div class="hidden md:flex items-center justify-center md:w-1/12 px-4">
+                                <div class="w-6 h-6 rounded-full bg-primary-500 border-4 border-white shadow-md"></div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10 md:text-left text-right order-2">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">2014 - Primera Tienda</h3>
+                                <p class="text-gray-600">
+                                    Abrimos nuestra primera tienda física en el centro de la ciudad, permitiéndonos atender a más clientes y mostrar toda nuestra variedad de diseños.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 3 -->
+                        <div class="relative md:flex items-center">
+                            <div class="md:w-1/2 md:pr-10 mb-6 md:mb-0 md:text-right">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">2017 - Certificación Ecológica</h3>
+                                <p class="text-gray-600">
+                                    Obtuvimos la certificación de materiales ecológicos y procesos sostenibles, reforzando nuestro compromiso con el medio ambiente y la salud de los bebés.
+                                </p>
+                            </div>
+                            <div class="hidden md:flex items-center justify-center md:w-1/12 px-4">
+                                <div class="w-6 h-6 rounded-full bg-primary-500 border-4 border-white shadow-md"></div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10">
+                                <div class="bg-white p-6 rounded-xl shadow-md">
+                                    <img src="../assets/img/NOSOTROS/blog1.jpeg" 
+                                         alt="Certificación ecológica" 
+                                         class="w-full h-48 object-cover rounded-lg mb-4">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 4 -->
+                        <div class="relative md:flex items-center">
+                            <div class="md:w-1/2 md:pr-10 mb-6 md:mb-0 order-1">
+                                <div class="bg-white p-6 rounded-xl shadow-md">
+                                    <img src="../assets/img/NOSOTROS/nosotros.png" 
+                                         alt="Tienda online" 
+                                         class="w-full h-48 object-cover rounded-lg mb-4">
+                                </div>
+                            </div>
+                            <div class="hidden md:flex items-center justify-center md:w-1/12 px-4">
+                                <div class="w-6 h-6 rounded-full bg-primary-500 border-4 border-white shadow-md"></div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10 md:text-left text-right order-2">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">2020 - Expansión Digital</h3>
+                                <p class="text-gray-600">
+                                    Lanzamos nuestra tienda online, llegando a familias en todo el país. También implementamos un sistema de personalización de zapatitos que fue un éxito rotundo.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 5 -->
+                        <div class="relative md:flex items-center">
+                            <div class="md:w-1/2 md:pr-10 mb-6 md:mb-0 md:text-right">
+                                <h3 class="text-xl font-bold text-gray-800 mb-2">2023 - Actualidad</h3>
+                                <p class="text-gray-600">
+                                    Hoy contamos con 5 tiendas físicas, una próspera tienda online y más de 50 diseños exclusivos. Seguimos innovando mientras mantenemos nuestra esencia artesanal.
+                                </p>
+                            </div>
+                            <div class="hidden md:flex items-center justify-center md:w-1/12 px-4">
+                                <div class="w-6 h-6 rounded-full bg-primary-500 border-4 border-white shadow-md"></div>
+                            </div>
+                            <div class="md:w-1/2 md:pl-10">
+                                <div class="bg-white p-6 rounded-xl shadow-md">
+                                    <img src="../assets/img/NOSOTROS/1.jpeg" 
+                                         alt="Equipo actual" 
+                                         class="w-full h-48 object-cover rounded-lg mb-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipo -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Conoce a <span class="text-primary-500">Nuestro Equipo</span></h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">El corazón y alma detrás de cada zapatito</p>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Miembro 1 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                 alt="María González" 
+                                 class="w-full h-full object-cover transition-transform duration-500 team-member">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">María González</h3>
+                            <p class="text-primary-500 font-medium mb-3">Fundadora & Diseñadora</p>
+                            <p class="text-gray-600 text-sm">
+                                Con más de 20 años de experiencia en diseño de calzado infantil, María es la mente creativa detrás de nuestros modelos más icónicos.
+                            </p>
+                            <div class="flex mt-4 space-x-3">
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 2 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                 alt="Carlos Mendoza" 
+                                 class="w-full h-full object-cover transition-transform duration-500 team-member">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Carlos Mendoza</h3>
+                            <p class="text-primary-500 font-medium mb-3">Director de Producción</p>
+                            <p class="text-gray-600 text-sm">
+                                Especialista en materiales ecológicos, Carlos supervisa que cada par cumpla con nuestros estándares de calidad y confort.
+                            </p>
+                            <div class="flex mt-4 space-x-3">
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 3 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                 alt="Lucía Ramírez" 
+                                 class="w-full h-full object-cover transition-transform duration-500 team-member">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Lucía Ramírez</h3>
+                            <p class="text-primary-500 font-medium mb-3">Responsable de Atención al Cliente</p>
+                            <p class="text-gray-600 text-sm">
+                                Lucía y su equipo se aseguran de que cada familia reciba la atención personalizada que se merece.
+                            </p>
+                            <div class="flex mt-4 space-x-3">
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Miembro 4 -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <div class="overflow-hidden h-64">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                 alt="Ana Torres" 
+                                 class="w-full h-full object-cover transition-transform duration-500 team-member">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-1">Ana Torres</h3>
+                            <p class="text-primary-500 font-medium mb-3">Artesana Principal</p>
+                            <p class="text-gray-600 text-sm">
+                                Con manos mágicas, Ana lleva 12 años dando vida a nuestros diseños con precisión y dedicación.
+                            </p>
+                            <div class="flex mt-4 space-x-3">
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary-500">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestros <span class="text-primary-500">Valores</span></h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Principios que guían cada decisión que tomamos</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Valor 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center">
+                        <div class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15l8-8m0 0l-8-8m8 8H4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Innovación Constante</h3>
+                        <p class="text-gray-600">
+                            Buscamos siempre mejorar nuestros diseños y procesos, incorporando nuevas técnicas y materiales que beneficien a los pequeños pies.
+                        </p>
+                    </div>
+                    
+                    <!-- Valor 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center">
+                        <div class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sostenibilidad</h3>
+                        <p class="text-gray-600">
+                            Nos comprometemos con el medio ambiente utilizando materiales ecológicos y procesos de producción responsables.
+                        </p>
+                    </div>
+                    
+                    <!-- Valor 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center">
+                        <div class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Amor al Detalle</h3>
+                        <p class="text-gray-600">
+                            Cada puntada, cada costura y cada terminado recibe la misma atención y cuidado, porque sabemos que los detalles hacen la diferencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary-400 to-primary-600 text-white">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listos para los primeros pasos de tu bebé?</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Descubre nuestra colección de zapatitos hechos con amor y dedicación.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#" class="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-full font-bold shadow-lg transition-all hover:scale-105">
+                        Ver Colección
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-full font-bold transition-all hover:scale-105">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Logo y descripción -->
+                <div>
+                    <a href="#" class="flex items-center space-x-2 mb-6">
+                        <span class="text-2xl font-heading font-bold text-white">Zapateria<span class="text-primary-500">Ardillita</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Zapatitos artesanales para los primeros pasos de tu bebé. Hechos con amor y materiales de la más alta calidad.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-pinterest-p text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces rápidos -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Enlaces Rápidos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary-500 transition-colors">Inicio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Tienda</a></li>
+                        <li><a href="nosotros.html" class="text-primary-500 hover:text-primary-400 transition-colors">Nosotros</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary-500 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Categorías -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Categorías</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Primeros Pasos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Caminantes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Niñas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Niños</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Edición Limitada</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contacto -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contacto</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary-500"></i>
+                            <span>Calle Ficticia 123, Ciudad Imaginaria</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-primary-500"></i>
+                            <span>+1 234 567 890</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-primary-500"></i>
+                            <span>info@zapateriaardillita.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-primary-500"></i>
+                            <span>Lun-Vie: 9am - 6pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; 2023 Zapateria Ardillita. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-primary-500 text-sm transition-colors">Términos y Condiciones</a>
+                    <a href="#" class="text-gray-500 hover:text-primary-500 text-sm transition-colors">Política de Privacidad</a>
+                    <a href="#" class="text-gray-500 hover:text-primary-500 text-sm transition-colors">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+
+            // Ajustar la altura para animar el menú
+            if (mobileMenu.classList.contains('open')) {
+                mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+            } else {
+                mobileMenu.style.maxHeight = '0';
+            }
+
+            // Cambiar icono
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Cerrar menú móvil si está abierto
+                    if (mobileMenu.classList.contains('open')) {
+                        mobileMenu.classList.remove('open');
+                        mobileMenu.style.maxHeight = '0';
+                        const icon = mobileMenuButton.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

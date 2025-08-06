@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria Ardillita | Zapatitos para Bebés</title>
+    <meta name="description" content="Zapatitos artesanales de máxima calidad para los primeros pasos de tu bebé. Materiales ecológicos y diseños únicos.">
+    
+    <!-- Preload de fuentes y recursos críticos -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon y meta tags para redes sociales -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#FFB6C1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zapateriaardillita.com/">
+    <meta property="og:title" content="Zapateria Ardillita | Zapatitos Premium para Bebés">
+    <meta property="og:description" content="Zapatitos artesanales de máxima calidad para los primeros pasos de tu bebé. Materiales ecológicos y diseños únicos.">
+    <meta property="og:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zapateriaardillita.com/">
+    <meta property="twitter:title" content="Zapateria Ardillita | Zapatitos Premium para Bebés">
+    <meta property="twitter:description" content="Zapatitos artesanales de máxima calidad para los primeros pasos de tu bebé. Materiales ecológicos y diseños únicos.">
+    <meta property="twitter:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+
+    <link rel="shortcut icon" href="assets/img/HERO/ardilla.png" type="image/x-icon">
+
+    <!-- Tailwind CSS con configuración personalizada -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#FFF0F3',
+                            100: '#FFD6E0',
+                            200: '#FFB6C1',
+                            300: '#FF8FA3',
+                            400: '#FF758F',
+                            500: '#FF477E',
+                            600: '#EB0055',
+                            700: '#C7004C',
+                            800: '#A80040',
+                            900: '#870033',
+                            1000: '#25D366',
+                        },
+                        secondary: {
+                            50: '#F0F9FF',
+                            100: '#E0F2FE',
+                            200: '#BAE6FD',
+                            300: '#7DD3FC',
+                            400: '#38BDF8',
+                            500: '#0EA5E9',
+                            600: '#0284C7',
+                            700: '#0369A1',
+                            800: '#075985',
+                            900: '#0C4A6E',
+                            1000: '#FF477E',
+                        },
+                        accent: {
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS personalizado -->
+    <style>
+        /* Estilos base optimizados */
+        body {
+            background-color: #fff;
+            color: #374151;
+            font-family: 'Quicksand', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            text-rendering: optimizeLegibility;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'Quicksand', sans-serif;
+            color: #1f2937;
+            letter-spacing: -0.015em;
+        }
+
+        .transition-all-slow {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .shadow-soft {
+            box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+        }
+
+        .shadow-hover {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+        }
+
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .img-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-contain {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+
+        .animate-wiggle {
+            animation: wiggle 1s ease-in-out infinite;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        }
+
+        .mobile-menu.open {
+            max-height: 1000px;
+        }
+
+        .skeleton {
+            background-color: #e5e7eb;
+            animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        .product-card {
+            perspective: 1000px;
+        }
+
+        .product-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .product-card:hover .product-inner {
+            transform: rotateY(10deg);
+        }
+
+        .neon-effect {
+            text-shadow: 0 0 5px rgba(255, 182, 193, 0.5), 0 0 10px rgba(255, 182, 193, 0.3);
+        }
+
+        .gradient-animate {
+            background-size: 200% 200%;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Animaciones */
+        @keyframes flotar {
+            0%, 100% { transform: translateY(0) rotate(-1deg); }
+            50% { transform: translateY(-15px) rotate(1deg); }
+        }
+        
+        .animate-float {
+            animation: flotar 6s ease-in-out infinite;
+            transform-origin: center bottom;
+        }
+        
+        @keyframes pulso {
+            0%, 100% { transform: scale(1); opacity: 0.4; }
+            50% { transform: scale(1.15); opacity: 0.6; }
+        }
+        
+        .circulo-decorativo {
+            animation: pulso 7s cubic-bezier(0.33, 1, 0.68, 1) infinite;
+        }
+        
+        .circulo-decorativo:nth-child(1) { animation-delay: 0s; }
+        .circulo-decorativo:nth-child(2) { animation-delay: 1.5s; }
+        .circulo-decorativo:nth-child(3) { animation-delay: 3s; }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        
+        .modal-content {
+            position: relative;
+            margin: 5% auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            background: #000;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            background: #000;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            z-index: 10;
+        }
+        
+        .close-modal:hover {
+            background: #333;
+        }
+        
+        video {
+            width: 100%;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="relative">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500">
+        <div class="relative w-24 h-24 mb-4">
+            <div class="absolute inset-0 rounded-full border-4 border-t-primary-500 border-r-primary-300 border-b-primary-400 border-l-primary-200 animate-spin"></div>
+            <div class="absolute inset-4 rounded-full border-4 border-transparent"></div>
+            <div class="absolute inset-8 flex items-center justify-center">
+                <img 
+                    src="assets/img/HERO/ardilla.png" 
+                    alt="Icono Ardillita"
+                    class="w-10 h-10 animate-pulse-slow"
+                >
+            </div>
+        </div>
+        <h2 class="text-xl font-heading text-gray-700">Zapateria Ardillita...</h2>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="flex justify-between items-center py-3">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="text-2xl font-heading font-bold text-gray-800">Zapateria<span class="text-primary-500">Ardillita</span></span>
+                </a>
+                
+                <!-- Menú principal desktop -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="#" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Inicio</a>
+                    <a href="nav/ninos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niños</a>
+                    <a href="nav/ninas.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niñas</a>
+                    <a href="nav/nacidos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Recién Nacidos</a>
+                    <a href="nav/caminantes.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Categoria</a>
+                    <a href="nav/nosotros.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Nosotros</a>
+                    <a href="nav/contacto.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Contacto</a>
+                </nav>
+                
+                <!-- Iconos de acción -->
+                <div class="flex items-center space-x-4">
+                    <!-- Botón de favoritos -->
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="favorites-btn">
+                        <i class="far fa-heart text-xl"></i>
+                    </button>
+                    
+                    <!-- Botón de carrito -->
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="cart-btn">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                    </button>
+                    
+                    <!-- Botón de menú móvil -->
+                    <button class="p-2 text-gray-600 hover:text-primary-500 lg:hidden" id="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    
+                    <!-- Botón de WhatsApp mejorado -->
+                    <a href="https://wa.me/51997758740" 
+                       target="_blank"
+                       class="hidden md:flex items-center space-x-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all hover:scale-105">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-3">
+                <div class="grid grid-cols-1 divide-y divide-gray-100">
+                    <a href="#" class="py-3 text-gray-700 font-medium">Inicio</a>
+                    <a href="nav/ninos.html" class="py-3 text-gray-700 font-medium">Niños</a>
+                    <a href="nav/ninas.html" class="py-3 text-gray-700 font-medium">Niñas</a>
+                    <a href="nav/nacidos.html" class="py-3 text-gray-700 font-medium">Recién Nacidos</a>
+                    <a href="nav/caminantes.html" class="py-3 text-gray-700 font-medium">Categorias</a>
+                    <a href="nav/nosotros.html" class="py-3 text-gray-700 font-medium">Nosotros</a>
+                    <a href="nav/contacto.html" class="py-3 text-gray-700 font-medium">Contacto</a>
+                    
+                    <div class="py-3 flex space-x-4">
+                        <a href="#" class="bg-secondary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fas fa-store mr-2"></i>Tienda
+                        </a>
+                        <a href="#" class="bg-primary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fab fa-whatsapp mr-2"></i> Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden" aria-label="Presentación de Zapatería Ardillita">
+        <!-- Fondo con gradiente y textura -->
+        <div class="absolute inset-0 z-0" aria-hidden="true">
+            <div class="absolute inset-0 bg-gradient-to-r from-white/80 to-primary-100/50"></div>
+            <div class="absolute inset-0 opacity-5 bg-[url('assets/img/patron-puntos.svg')]"></div>
+        </div>
+        
+        <!-- Contenido principal -->
+        <div class="container mx-auto px-4 lg:px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Imagen con elementos decorativos -->
+                <div class="relative">
+                    <div class="relative max-w-md mx-auto lg:mr-0 lg:ml-auto">
+                        <img src="assets/img/HERO/9.png" alt="Zapatitos para bebé de cuero" 
+                             class="w-full h-auto animate-float" 
+                             loading="lazy" width="500" height="500">
+                        
+                        <!-- Círculos decorativos -->
+                        <div class="circulo-decorativo absolute -top-8 -left-8 w-20 h-20 rounded-full bg-primary-100/30"></div>
+                        <div class="circulo-decorativo absolute -bottom-6 -right-6 w-16 h-16 rounded-full bg-accent-100/30"></div>
+                        <div class="circulo-decorativo absolute top-1/4 -right-8 w-12 h-12 rounded-full bg-secondary-100/30"></div>
+                    </div>
+                </div>
+                <!-- Texto y botones -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-accent-500">Zapateria Ardillita</span> 
+                        <span class="text-gray-800 block mt-2">Jr 7 de junio 125-B</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                        Diseños 100% cuero que cuidan y protegen los pasos más importantes de tu bebé.
+                    </p>
+                    
+                    <!-- Botones -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="../ardilla-main/nav/contacto.html" class="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-8 py-4 rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center">
+                            <span>COMO LLEGAR</span>
+                            <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                        
+                        <button class="video-button bg-white text-gray-800 border-2 border-primary-100 hover:border-primary-300 px-8 py-4 rounded-full font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center" data-video-src="assets/img/HERO/video.mp4">
+                            <i class="fas fa-play-circle text-primary-500 mr-2" aria-hidden="true"></i>
+                            <span>Ver Video</span>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!-- Modal del Video -->
+        <div id="videoModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+            <div class="modal-content">
+                <button class="close-modal" aria-label="Cerrar video">&times;</button>
+                <video id="modalVideo" width="100%" controls aria-labelledby="modalTitle">
+                    <source src="" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-primary-100 text-primary-600 px-4 py-1 rounded-full text-sm font-medium mb-3">Novedades</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestra Colección Premium</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Diseños exclusivos con materiales de la más alta calidad para el confort de tu bebé.</p>
+            </div>
+            
+            <!-- Filtros -->
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+                <button class="px-4 py-2 bg-primary-500 text-white rounded-full text-sm font-medium">Todos</button>
+                <button class="px-4 py-2 bg-white border border-gray-200 hover:border-primary-300 rounded-full text-sm font-medium">Recién Nacidos</button>
+                <button class="px-4 py-2 bg-white border border-gray-200 hover:border-primary-300 rounded-full text-sm font-medium">Niñas</button>
+                <button class="px-4 py-2 bg-white border border-gray-200 hover:border-primary-300 rounded-full text-sm font-medium">Niños</button>
+                <button class="px-4 py-2 bg-white border border-gray-200 hover:border-primary-300 rounded-full text-sm font-medium">Primeros Pasos</button>
+                <button class="px-4 py-2 bg-white border border-gray-200 hover:border-primary-300 rounded-full text-sm font-medium">Ofertas</button>
+            </div>
+            
+            <!-- Lista de productos -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card group">
+                    <div class="product-inner bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-lg">
+                        <div class="relative overflow-hidden h-64 bg-pink-50 flex items-center justify-center">
+                            <img src="assets/imgpro/V2504/1..png" alt="Sandalias para niña modelo V2504" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110">
+                            
+                            <!-- Badges -->
+                            <div class="absolute top-3 left-3 flex flex-col space-y-2">
+                                <span class="bg-primary-500 text-white text-xs font-bold px-2 py-1 rounded-full">NUEVO</span>
+                                <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">V2504</span>
+                            </div>
+                            
+                            <!-- Quick actions -->
+                            <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">SANDALIA NIÑA V2504</h3>
+                            </div>
+                            
+                            <p class="text-gray-500 text-sm mb-3">SANDALIA PARA NIÑA COLECCION VERANO</p>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-500 text-xs ml-1">(128)</span>
+                                </div>
+                                
+                                <a href="productos/ninas/v2504.html" class="bg-gradient-to-r from-primary-400 to-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 flex items-center">
+                                    <i class="fas fa-cart-plus mr-1"></i> Detalle
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card group">
+                    <div class="product-inner bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-lg">
+                        <div class="relative overflow-hidden h-64 bg-blue-50 flex items-center justify-center">
+                            <img src="assets/imgpro/V2505/1.png" alt="Sandalias para niña modelo V2505" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110">
+                             
+                             <!-- Badges -->
+                            <div class="absolute top-3 left-3 flex flex-col space-y-2">
+                                <span class="bg-primary-500 text-white text-xs font-bold px-2 py-1 rounded-full">NUEVO</span>
+                                <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">V2505</span>
+                            </div>
+
+                            <!-- Quick actions -->
+                            <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">SANDALIA NIÑA V2505</h3>
+                            </div>
+                            
+                            <p class="text-gray-500 text-sm mb-3">SANDALIA PARA NIÑA COLECCION VERANO</p>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span class="text-gray-500 text-xs ml-1">(87)</span>
+                                </div>
+                                
+                                <a href="productos/ninas/v2505.html" class="bg-gradient-to-r from-primary-400 to-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 flex items-center">
+                                    <i class="fas fa-cart-plus mr-1"></i> Detalle
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card group">
+                    <div class="product-inner bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-lg">
+                        <div class="relative overflow-hidden h-64 bg-purple-50 flex items-center justify-center">
+                            <img src="assets/imgninos/P-472/1.png" alt="Estrellitas Unisex" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110">
+                            
+                            <!-- Badges -->
+                            <div class="absolute top-3 left-3 flex flex-col space-y-2">
+                                <span class="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded-full">NUEVO</span>
+                                <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">P-472</span>
+                            </div>
+                            
+                            <!-- Quick actions -->
+                            <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">BIOCUERO CARAMELO C/ CAMEL</h3>
+                            </div>
+                            
+                            <p class="text-gray-500 text-sm mb-3">Confort total para todo el día</p>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="text-gray-500 text-xs ml-1">(215)</span>
+                                </div>
+                                
+                                <button class="bg-gradient-to-r from-purple-400 to-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 flex items-center">
+                                    <i class="fas fa-cart-plus mr-1"></i> Detalles
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card group">
+                    <div class="product-inner bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-lg">
+                        <div class="relative overflow-hidden h-64 bg-yellow-50 flex items-center justify-center">
+                            <img src="assets/imgninos/P-468/1.png" alt="Rayitos de Sol" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110">
+                            
+                            <!-- Badges -->
+                            <div class="absolute top-3 left-3 flex flex-col space-y-2">
+                                <span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">NUEVO</span>
+                                <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">P-468</span>
+                            </div>
+                            
+                            <!-- Quick actions -->
+                            <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg"> BIOCUERO PACAY C/ PAPA</h3>
+                                
+                            </div>
+                            
+                            <p class="text-gray-500 text-sm mb-3">Zapatitos ligeros para el verano</p>
+                            
+                            <div class="flex justify-between items-center">
+                                <div class="flex text-yellow-400 text-sm">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <span class="text-gray-500 text-xs ml-1">(176)</span>
+                                </div>
+                                
+                                <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 flex items-center">
+                                    <i class="fas fa-cart-plus mr-1"></i> Detalles
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="nav/caminantes.html" class="inline-block bg-gradient-to-r from-primary-500 to-accent-500 text-white px-8 py-4 rounded-full font-medium shadow-lg hover:shadow-xl transition-all hover:scale-105">
+                    Ver Todos los Productos <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de características -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center">
+                    <div class="bg-primary-100 text-primary-600 p-4 rounded-full mb-4">
+                        <i class="fas fa-store text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Visita Nuestra Tienda</h3>
+                    <p class="text-gray-600">Te Esperamos en Nuestra Tienda Física ubicada en Jr 7 de junio 125-B para atenderte con la mejor atención personalizada</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center">
+                    <div class="bg-primary-100 text-primary-600 p-4 rounded-full mb-4">
+                        <i class="fas fa-scissors text-2xl text-[#FF477E]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Materiales 100% Cuero</h3>
+                    <p class="text-gray-600">Nuestros productos están elaborados con cuero de la más alta calidad, garantizando durabilidad y confort.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center">
+                    <div class="bg-primary-100 text-primary-600 p-4 rounded-full mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Garantía en su Compra</h3>
+                    <p class="text-gray-600">Cada par pasa por rigurosos controles de calidad para garantizar durabilidad, confort y seguridad para tu pequeño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-primary-100 text-primary-600 px-4 py-1 rounded-full text-sm font-medium mb-3">Explora</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Encuentra por Categoría</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Selecciona la categoría que mejor se adapte a las necesidades de tu pequeño.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Category 1 -->
+                <a href="nav/nacidos.html" class="category-card group relative overflow-hidden rounded-xl shadow-md h-96">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Recién Nacidos</h3>
+                        <p class="text-white/90 mb-4">Zapatitos ultra suaves para los primeros meses</p>
+                        <span class="text-white font-medium inline-flex items-center group-hover:underline">
+                            Ver colección <i class="fas fa-chevron-right ml-1 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </div>
+                    <img src="assets/img/CATEGORIA/reciennacido.png" alt="Zapatos para recién nacidos" class="img-cover absolute inset-0 group-hover:scale-105 transition-transform duration-500">
+                </a>
+                
+                <!-- Category 2 -->
+                <a href="nav/ninos.html" class="category-card group relative overflow-hidden rounded-xl shadow-md h-96">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Para Niño</h3>
+                        <p class="text-white/90 mb-4">Diseños cómodos y divertidos para pequeños exploradores</p>
+                        <span class="text-white font-medium inline-flex items-center group-hover:underline">
+                            Ver colección <i class="fas fa-chevron-right ml-1 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </div>
+                    <img src="assets/img/CATEGORIA/ninos.jpg" alt="Zapatos para niños" class="img-cover absolute inset-0 group-hover:scale-105 transition-transform duration-500">
+                </a>
+                
+                <!-- Category 3 -->
+                <a href="nav/ninas.html" class="category-card group relative overflow-hidden rounded-xl shadow-md h-96">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Para Niña</h3>
+                        <p class="text-white/90 mb-4">Estilos encantadores para las princesas de la casa</p>
+                        <span class="text-white font-medium inline-flex items-center group-hover:underline">
+                            Ver colección <i class="fas fa-chevron-right ml-1 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </div>
+                    <img src="assets/img/CATEGORIA/ninas.jpg" alt="Zapatos para niñas" class="img-cover absolute inset-0 group-hover:scale-105 transition-transform duration-500">
+                </a>
+                
+                <!-- Category 4 -->
+                <a href="nav/pasos.html" class="category-card group relative overflow-hidden rounded-xl shadow-md h-96">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10 flex flex-col justify-end p-6">
+                        <h3 class="text-2xl font-bold text-white mb-2">Primeros Pasos</h3>
+                        <p class="text-white/90 mb-4">Suelas antideslizantes para los primeros aventureros</p>
+                        <span class="text-white font-medium inline-flex items-center group-hover:underline">
+                            Ver colección <i class="fas fa-chevron-right ml-1 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </span>
+                    </div>
+                    <img src="assets/img/CATEGORIA/pasos.jpg" alt="Zapatos para primeros pasos" class="img-cover absolute inset-0 group-hover:scale-105 transition-transform duration-500">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección "About Us" -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="relative rounded-xl overflow-hidden shadow-xl">
+                        <img src="assets/img/NOSOTROS/nosotros.png" alt="Nuestro taller de zapatos" class="w-full h-auto">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/40"></div>
+                    </div>
+                    
+                    <div class="absolute -bottom-8 -right-8 bg-white rounded-xl shadow-xl p-6 w-64 transform rotate-1">
+                        <div class="flex items-center">
+                            <div class="bg-primary-100 text-primary-600 p-3 rounded-lg mr-3">
+                                <i class="fas fa-award text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">+20 años</h4>
+                                <p class="text-gray-600 text-sm">De experiencia en calzado infantil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="inline-block bg-primary-100 text-primary-600 px-4 py-1 rounded-full text-sm font-medium mb-3">Nuestra historia</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Zapatitos Infantiles 100% Cuero</h2>
+                    <p class="text-gray-600 mb-6">En Zapatería Ardillita nos comprometemos a ofrecer zapatitos de calidad, diseñados con innovación y ternura. Cada par no solo es adorable, sino que también está pensado para acompañar y favorecer el desarrollo saludable de los pies de tu bebé.</p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 text-primary-600 p-2 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Materiales 100% Cuero</h4>
+                                <p class="text-gray-600">Utilizamos cuero genuino, suave y resistente, ideal para proteger y acompañar el desarrollo natural de los pies de tu bebé.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 text-primary-600 p-2 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Variedad de Diseños</h4>
+                                <p class="text-gray-600">Ofrecemos cada diseño pensando en el mejor confort, para favorecer el desarrollo saludable de tu bebé.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 text-primary-600 p-2 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Calidad y Diseño</h4>
+                                <p class="text-gray-600">Nuestros productos son elaborados por profesionales en talleres con condiciones laborales justas, dignas y responsables.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="nav/nosotros.html" class="inline-flex items-center text-primary-500 font-medium hover:text-primary-700">
+                        Conoce más sobre nosotros <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-8 md:p-12 shadow-inner overflow-hidden relative">
+                <!-- Elementos decorativos -->
+                <div class="absolute -top-20 -left-20 w-40 h-40 rounded-full bg-pink-100/30"></div>
+                <div class="absolute -bottom-16 -right-16 w-32 h-32 rounded-full bg-rose-100/30"></div>
+                
+                <div class="relative z-10">
+                    <div class="text-center max-w-3xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-rose-800">Únete a nuestra comunidad</h2>
+                        <p class="text-rose-600 mb-8">Suscríbete para recibir novedades y descuentos especiales.</p>
+                        
+                        <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                            <!-- Campo honeypot para bots -->
+                            <input type="text" name="bot-field" class="hidden" aria-hidden="true">
+                            
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="zapateriaardillita@gmail.com" 
+                                class="flex-grow px-6 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-rose-300 border border-rose-200" 
+                                required
+                            >
+                            <button 
+                                type="submit" 
+                                class="bg-gradient-to-r from-rose-500 to-pink-500 text-white px-6 py-3 rounded-full font-medium shadow-md hover:shadow-lg transition-all hover:scale-105"
+                            >
+                                Suscribirse <i class="fas fa-paper-plane ml-1"></i>
+                            </button>
+                        </form>
+                        
+                        <p class="text-rose-400 text-sm mt-4">Nos preocupamos por tu privacidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-primary-100 text-primary-600 px-4 py-1 rounded-full text-sm font-medium mb-3">Consejos útiles</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nuestro Blog</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Aprende más sobre el cuidado de los pies de tu bebé y descubre nuestros consejos expertos.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Artículo 1 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <a href="blog/elige-zapatos-bebe.html">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/img/BLOG/zapatos-bebe.jpg" alt="Cómo elegir zapatos para bebé" class="img-cover hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-3 left-3 bg-primary-500 text-white text-xs font-bold px-2 py-1 rounded-full">Nuevo</div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary-500 text-sm font-medium">Cuidado Infantil</span>
+                            <h3 class="text-xl font-bold mb-2 mt-1">Cómo elegir los zapatos perfectos para cada etapa</h3>
+                            <p class="text-gray-600 mb-4">Guía completa para seleccionar el calzado adecuado según la edad y desarrollo de tu bebé.</p>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>
+                                <span>5 min lectura</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Artículo 2 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <a href="blog/materiales-ecologicos.html">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/img/BLOG/materiales.jpg" alt="Materiales ecológicos para bebés" class="img-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary-500 text-sm font-medium">Materiales</span>
+                            <h3 class="text-xl font-bold mb-2 mt-1">Por qué elegir materiales naturales para tu bebé</h3>
+                            <p class="text-gray-600 mb-4">Los beneficios de los tejidos orgánicos para la piel sensible de los más pequeños.</p>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>
+                                <span>4 min lectura</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <!-- Artículo 3 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                    <a href="blog/primeros-pasos.html">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/img/BLOG/primeros-pasos.jpg" alt="Estimulación primeros pasos" class="img-cover hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-primary-500 text-sm font-medium">Desarrollo</span>
+                            <h3 class="text-xl font-bold mb-2 mt-1">Estimula los primeros pasos de tu bebé</h3>
+                            <p class="text-gray-600 mb-4">Consejos y ejercicios para ayudar a tu pequeño en esta importante etapa de desarrollo.</p>
+                            <div class="flex items-center text-gray-500 text-sm">
+                                <i class="far fa-clock mr-1"></i>
+                                <span>6 min lectura</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="blog/" class="inline-flex items-center text-primary-500 font-medium hover:text-primary-700">
+                    Ver todos los artículos <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-primary-100 text-primary-600 px-4 py-1 rounded-full text-sm font-medium mb-3">Contáctanos</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Cómo podemos ayudarte?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Estamos aquí para responder cualquier pregunta que tengas sobre nuestros productos.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-inner">
+                    <h3 class="text-xl font-bold mb-6">Información de contacto</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 text-primary-600 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Dirección</h4>
+                                <p class="text-gray-600">JR. 7 DE JUNIO 125-B URB.CERCADO DE PUCALLPA CALLERIA. PUCALLPA, PERU</p>
+                                <a href="https://maps.app.goo.gl/Z7g9rc892iV2hSCB9" class="text-primary-500 text-sm inline-flex items-center mt-1 hover:underline">
+                                    Ver en mapa <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 text-primary-600 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Teléfono</h4>
+                                <p class="text-gray-600">+51 997 758 740</p>
+                                <p class="text-gray-600 text-sm mt-1">Lunes a Sábado: 9am - 8pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 text-primary-600 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">zapateriaardillita@gmail.com</p>
+                                <p class="text-gray-600 text-sm mt-1">Respuesta en menos de 24 horas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-primary-100 text-primary-600 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Redes Sociales</h4>
+                                <div class="flex space-x-3 mt-2">
+                                    <a href="https://www.facebook.com/zapateriaardillita" class="bg-primary-100 text-primary-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-all">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/zapateriaardillita" class="bg-primary-100 text-primary-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-all">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.tiktok.com/@zapateriaardillita" class="bg-primary-100 text-primary-600 w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-500 hover:text-white transition-all">
+                                        <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-md p-8">
+                    <h3 class="text-xl font-bold mb-6">Envíanos un mensaje</h3>
+                    <form id="contactForm" class="space-y-5" onsubmit="showThanks(event)">
+                        <!-- Campos del formulario -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Nombre completo</label>
+                                <input type="text" id="name" required 
+                                    class="w-full px-5 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent"
+                                    placeholder="Tu nombre completo">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-1">Correo electrónico</label>
+                                <input type="email" id="email" required 
+                                    class="w-full px-5 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent"
+                                    placeholder="tucorreo@ejemplo.com">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-1">Teléfono (opcional)</label>
+                            <input type="tel" id="phone" 
+                                class="w-full px-5 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent"
+                                placeholder="+51 123 456 789">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-1">Asunto</label>
+                            <input type="text" id="subject" required 
+                                class="w-full px-5 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent"
+                                placeholder="¿En qué podemos ayudarte?">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-1">Mensaje</label>
+                            <textarea id="message" rows="4" required 
+                                    class="w-full px-5 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-primary-500 to-accent-500 text-white px-6 py-4 rounded-xl font-medium shadow-md hover:shadow-lg transition-all hover:scale-[1.01]">
+                            Enviar Mensaje <i class="fas fa-paper-plane ml-1"></i>
+                        </button>
+                    </form>
+    
+                    <!-- Mensaje de gracias (oculto inicialmente) -->
+                    <div id="thankYouMessage" class="hidden text-center py-8">
+                        <div class="text-green-500 text-5xl mb-4">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">¡Muchas gracias!</h3>
+                        <p class="text-gray-600">Hemos recibido tu mensaje.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-primary-100 text-primary-600 px-4 py-1 rounded-full text-sm font-medium mb-3">Preguntas frecuentes</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Tienes alguna duda?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Aquí respondemos a las preguntas más comunes sobre nuestros productos.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <!-- Pregunta 1 -->
+                    <div class="border-b border-gray-100">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                            <h3 class="font-bold text-gray-800">¿Cómo elijo la talla correcta para mi bebé?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Ofrecemos una guía de tallas detallada para cada uno de nuestros productos. Te recomendamos medir el pie de tu bebé desde el talón hasta el dedo más largo y comparar con nuestra tabla de tallas. Si necesitas ayuda adicional, nuestro equipo de atención al cliente estará encantado de asesorarte.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 2 -->
+                    <div class="border-b border-gray-100">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                            <h3 class="font-bold text-gray-800">¿Son lavables los zapatitos?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Sí, la mayoría de nuestros zapatitos son lavables a mano con agua fría y jabón neutro. Recomendamos dejar secar al aire libre, lejos de fuentes directas de calor. Cada producto incluye instrucciones específicas de cuidado en su etiqueta.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 3 -->
+                    <div class="border-b border-gray-100">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                            <h3 class="font-bold text-gray-800">¿Qué materiales utilizan en sus productos?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Utilizamos materiales 100% naturales como algodón orgánico, lana merino sin tratar y cuero vegetal. Todos nuestros materiales están certificados como seguros para la piel sensible de los bebés y cumplen con los más altos estándares de calidad y sostenibilidad.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 4 -->
+                    <div class="border-b border-gray-100">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                            <h3 class="font-bold text-gray-800">¿Cuánto tarda el envío de los pedidos?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Los pedidos realizados antes de las 12:00 pm (hora local) se envían el mismo día. El tiempo de entrega varía según la ubicación: 1-2 días para envíos locales, 3-5 días para nacionales y 7-10 días para internacionales. Ofrecemos seguimiento en tiempo real para todos los pedidos.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 5 -->
+                    <div class="">
+                        <button class="faq-question w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-all">
+                            <h3 class="font-bold text-gray-800">¿Aceptan devoluciones o cambios?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer px-6 pb-6 hidden">
+                            <p class="text-gray-600">Sí, aceptamos devoluciones y cambios dentro de los 30 días posteriores a la recepción del pedido. Los productos deben estar en su estado original, sin usar y con todas las etiquetas. El costo del envío de devolución corre por cuenta del cliente, excepto en casos de error por nuestra parte.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <p class="text-gray-600 mb-4">¿No encontraste tu respuesta?</p>
+                    <a href="nav/contacto.html" class="inline-block bg-primary-500 text-white px-6 py-3 rounded-full font-medium shadow-md hover:shadow-lg transition-all hover:scale-105">
+                        Contáctanos <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <span class="text-2xl font-heading font-bold">Zapateria <span class="text-primary-300">Ardillita</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Zapatitos de calidad para los pasos más importantes de tu bebé. Diseños artesanales con materiales ecológicos y seguros.</p>
+                    
+                    <div class="flex space-x-4 mb-6">
+                        <a href="https://www.facebook.com/zapateriaardillita" class="bg-gray-800 text-gray-300 hover:text-white hover:bg-primary-500 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zapateriaardillita" class="bg-gray-800 text-gray-300 hover:text-white hover:bg-primary-500 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@zapateriaardillita" class="bg-gray-800 text-gray-300 hover:text-white hover:bg-primary-500 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@zapateriaardillita" class="bg-gray-800 text-gray-300 hover:text-white hover:bg-primary-500 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center text-gray-400 text-sm">
+                        <i class="fas fa-credit-card mr-2"></i>
+                        <span>Aceptamos todas las tarjetas</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Comprar</h4>
+                    <ul class="space-y-3">
+                        <li><a href="coleccion/coleccion.html" class="text-gray-400 hover:text-primary-300 transition-all">Productos destacados</a></li>
+                        <li><a href="nav/pasos.html" class="text-gray-400 hover:text-primary-300 transition-all">Nuevas llegadas</a></li>
+                        <li><a href="nav/caminantes.html" class="text-gray-400 hover:text-primary-300 transition-all">Ofertas especiales</a></li>
+                        <li><a href="nav/ninas.html" class="text-gray-400 hover:text-primary-300 transition-all">Colección de verano</a></li>
+                        <li><a href="nav/nacidos.html" class="text-gray-400 hover:text-primary-300 transition-all">Edición limitada</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Información</h4>
+                    <ul class="space-y-3">
+                        <li><a href="nav/nosotros.html" class="text-gray-400 hover:text-primary-300 transition-all">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all" onclick="mostrarModal('privacidad')">Política de privacidad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-300 transition-all" onclick="mostrarModal('terminos')">Términos y condiciones</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-primary-300 transition-all">Preguntas frecuentes</a></li>
+                        <li><a href="blog/" class="text-gray-400 hover:text-primary-300 transition-all">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Servicio al cliente</h4>
+                    <ul class="space-y-3">
+                        <li><a href="nav/contacto.html" class="text-gray-400 hover:text-primary-300 transition-all">Contacto</a></li>
+                        <li><a href="envios-devoluciones.html" class="text-gray-400 hover:text-primary-300 transition-all">Envíos y devoluciones</a></li>
+                        <li><a href="guia-tallas.html" class="text-gray-400 hover:text-primary-300 transition-all">Guía de tallas</a></li>
+                        <li><a href="rastrear-pedido.html" class="text-gray-400 hover:text-primary-300 transition-all">Rastrear pedido</a></li>
+                        <li><a href="garantias.html" class="text-gray-400 hover:text-primary-300 transition-all">Garantías</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 dark:border-gray-800 pt-8 pb-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Texto de derechos -->
+                <p class="text-gray-500 dark:text-gray-400 text-sm text-center md:text-left">
+                    © 2025 Zapateria Ardillita. Todos los derechos reservados.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <!-- Yape -->
+                    <img src="assets/img/PAGOS/yape-seeklogo.png" alt="Yape" class="h-8 opacity-80 hover:opacity-100 transition-opacity">
+                    
+                    <!-- Plim -->
+                    <img src="assets/img/PAGOS/plin-logo-png_seeklogo-386806.png" alt="Plim" class="h-8 opacity-80 hover:opacity-100 transition-opacity">
+                    
+                    <!-- Visa -->
+                    <img src="assets/img/PAGOS/visa-10.svg" alt="Visa" class="h-8 opacity-80 hover:opacity-100 transition-opacity">
+                    
+                    <!-- Mastercard -->
+                    <img src="assets/img/PAGOS/descarga.png" alt="Mastercard" class="h-8 opacity-80 hover:opacity-100 transition-opacity">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-br from-primary-500 to-accent-500 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all opacity-0 invisible z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Mini cart -->
+    <div id="miniCart" class="fixed top-0 right-0 h-full w-full md:w-96 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50">
+        <div class="h-full flex flex-col">
+            <div class="p-6 border-b border-gray-200 flex justify-between items-center">
+                <h3 class="text-xl font-bold">Tu Carrito (3)</h3>
+                <button id="closeCart" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            
+            <div class="flex-grow overflow-y-auto p-6">
+                <!-- Producto en carrito -->
+                <div class="flex py-4 border-b border-gray-100">
+                    <div class="w-20 h-20 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://i.imgur.com/5Xm3hqV.png" alt="Angelitos Rosados" class="w-full h-full object-contain">
+                    </div>
+                    <div class="ml-4 flex-grow">
+                        <h4 class="font-medium text-gray-800">Angelitos Rosados</h4>
+                        <p class="text-gray-500 text-sm">Talla: 0-3 meses</p>
+                        <div class="flex justify-between items-center mt-1">
+                            <div class="flex items-center">
+                                <button class="text-gray-500 hover:text-primary-500 w-6 h-6 flex items-center justify-center border border-gray-200 rounded">
+                                    <i class="fas fa-minus text-xs"></i>
+                                </button>
+                                <span class="mx-2">1</span>
+                                <button class="text-gray-500 hover:text-primary-500 w-6 h-6 flex items-center justify-center border border-gray-200 rounded">
+                                    <i class="fas fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                            <span class="font-medium text-gray-800">$24.99</span>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-red-500 ml-2 self-start">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+                
+                <!-- Producto en carrito -->
+                <div class="flex py-4 border-b border-gray-100">
+                    <div class="w-20 h-20 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://i.imgur.com/8zNt9Yb.png" alt="Aventureros Azules" class="w-full h-full object-contain">
+                    </div>
+                    <div class="ml-4 flex-grow">
+                        <h4 class="font-medium text-gray-800">Aventureros Azules</h4>
+                        <p class="text-gray-500 text-sm">Talla: 6-9 meses</p>
+                        <div class="flex justify-between items-center mt-1">
+                            <div class="flex items-center">
+                                <button class="text-gray-500 hover:text-primary-500 w-6 h-6 flex items-center justify-center border border-gray-200 rounded">
+                                    <i class="fas fa-minus text-xs"></i>
+                                </button>
+                                <span class="mx-2">1</span>
+                                <button class="text-gray-500 hover:text-primary-500 w-6 h-6 flex items-center justify-center border border-gray-200 rounded">
+                                    <i class="fas fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                            <span class="font-medium text-gray-800">$29.99</span>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-red-500 ml-2 self-start">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+                
+                <!-- Producto en carrito -->
+                <div class="flex py-4 border-b border-gray-100">
+                    <div class="w-20 h-20 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
+                        <img src="https://i.imgur.com/3qXjL7Z.png" alt="Estrellitas Unisex" class="w-full h-full object-contain">
+                    </div>
+                    <div class="ml-4 flex-grow">
+                        <h4 class="font-medium text-gray-800">Estrellitas Unisex</h4>
+                        <p class="text-gray-500 text-sm">Talla: 3-6 meses</p>
+                        <div class="flex justify-between items-center mt-1">
+                            <div class="flex items-center">
+                                <button class="text-gray-500 hover:text-primary-500 w-6 h-6 flex items-center justify-center border border-gray-200 rounded">
+                                    <i class="fas fa-minus text-xs"></i>
+                                </button>
+                                <span class="mx-2">2</span>
+                                <button class="text-gray-500 hover:text-primary-500 w-6 h-6 flex items-center justify-center border border-gray-200 rounded">
+                                    <i class="fas fa-plus text-xs"></i>
+                                </button>
+                            </div>
+                            <span class="font-medium text-gray-800">$55.98</span>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 hover:text-red-500 ml-2 self-start">
+                        <i class="far fa-trash-alt"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="p-6 border-t border-gray-200">
+                <div class="flex justify-between mb-4">
+                    <span class="text-gray-600">Subtotal</span>
+                    <span class="font-medium">$110.96</span>
+                </div>
+                <div class="flex justify-between mb-4">
+                    <span class="text-gray-600">Envío</span>
+                    <span class="font-medium">Gratis</span>
+                </div>
+                <div class="flex justify-between mb-6">
+                    <span class="text-gray-600">Impuestos</span>
+                    <span class="font-medium">$8.87</span>
+                </div>
+                <div class="flex justify-between text-lg font-bold mb-6">
+                    <span>Total</span>
+                    <span>$119.83</span>
+                </div>
+                
+                <a href="#" class="block bg-gradient-to-r from-primary-500 to-accent-500 text-white text-center py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition-all mb-3">
+                    Proceder al pago
+                </a>
+                
+                <a href="#" class="block border border-primary-500 text-primary-500 text-center py-3 rounded-lg font-medium hover:bg-primary-50 transition-all">
+                    Seguir comprando
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay para el carrito -->
+    <div id="cartOverlay" class="fixed inset-0 bg-black/50 z-40 opacity-0 invisible transition-all duration-300"></div>
+
+    <!-- Modal para políticas -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-6 rounded-lg max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modal-titulo" class="text-xl font-bold"></h3>
+                <button onclick="cerrarModal()" class="text-gray-500 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div id="modal-contenido" class="text-gray-700">
+                <!-- El contenido se cargará dinámicamente -->
+            </div>
+            <div class="mt-6 text-center">
+                <button onclick="cerrarModal()" class="bg-primary-500 text-white px-4 py-2 rounded hover:bg-primary-600 transition-all">
+                    Aceptar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            mobileMenu.style.maxHeight = mobileMenu.classList.contains('open') ? mobileMenu.scrollHeight + 'px' : '0';
+            
+            // Cambiar icono
+            const icon = mobileMenuButton.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Cerrar todas las demás respuestas
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if (item !== answer) {
+                        item.classList.add('hidden');
+                        item.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                        item.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Alternar la respuesta actual
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+        
+        // Mini carrito
+        const cartBtn = document.getElementById('cart-btn');
+        const closeCart = document.getElementById('closeCart');
+        const miniCart = document.getElementById('miniCart');
+        const cartOverlay = document.getElementById('cartOverlay');
+        
+        if(cartBtn && closeCart && miniCart && cartOverlay) {
+            cartBtn.addEventListener('click', () => {
+                miniCart.classList.remove('translate-x-full');
+                cartOverlay.classList.remove('invisible', 'opacity-0');
+                cartOverlay.classList.add('visible', 'opacity-100');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            closeCart.addEventListener('click', () => {
+                miniCart.classList.add('translate-x-full');
+                cartOverlay.classList.remove('visible', 'opacity-100');
+                cartOverlay.classList.add('invisible', 'opacity-0');
+                document.body.style.overflow = '';
+            });
+            
+            cartOverlay.addEventListener('click', () => {
+                miniCart.classList.add('translate-x-full');
+                cartOverlay.classList.remove('visible', 'opacity-100');
+                cartOverlay.classList.add('invisible', 'opacity-0');
+                document.body.style.overflow = '';
+            });
+        }
+
+        // Modal de políticas
+        function mostrarModal(tipo) {
+            const modal = document.getElementById('modal');
+            const titulo = document.getElementById('modal-titulo');
+            const contenido = document.getElementById('modal-contenido');
+            
+            if (tipo === 'privacidad') {
+                titulo.textContent = 'Política de Privacidad';
+                contenido.innerHTML = `
+                    <h4 class="font-bold mb-2">Zapatería Ardillita</h4>
+                    <p class="mb-4">En Zapatería Ardillita, nos comprometemos a proteger y respetar su privacidad. Esta política explica cómo recopilamos, usamos y protegemos su información personal.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">Recopilación de Información</h5>
+                    <p class="mb-4">Recopilamos información cuando usted realiza una compra, se registra en nuestro sitio o interactúa con nuestros servicios. Esta información puede incluir su nombre, dirección, correo electrónico y detalles de pago.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">Uso de la Información</h5>
+                    <p class="mb-4">Utilizamos su información para procesar pedidos, mejorar nuestros servicios, comunicarnos con usted y personalizar su experiencia. Sus datos están estrictamente reservados y no serán compartidos con terceros sin su consentimiento, excepto cuando sea necesario para cumplir con la ley.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">Seguridad</h5>
+                    <p class="mb-4">Implementamos medidas de seguridad para proteger su información contra accesos no autorizados, alteración o destrucción.</p>
+                    
+                    <p class="text-sm mt-6">Esta política puede actualizarse ocasionalmente. Le recomendamos revisarla periódicamente.</p>
+                `;
+            } else if (tipo === 'terminos') {
+                titulo.textContent = 'Términos y Condiciones de Uso';
+                contenido.innerHTML = `
+                    <h4 class="font-bold mb-2">Términos y Condiciones de Uso - Zapatería Ardillita</h4>
+                    <p class="mb-4">Al acceder y utilizar nuestro sitio web, usted acepta cumplir con estos términos y condiciones.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">1. Uso del Sitio</h5>
+                    <p class="mb-4">Este sitio es para su uso personal y no comercial. No debe utilizarse para ningún propósito ilegal o no autorizado.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">2. Productos y Pedidos</h5>
+                    <p class="mb-4">Nos reservamos el derecho de limitar las cantidades de productos ofrecidos y de rechazar cualquier pedido. Todos los precios están sujetos a cambios sin previo aviso.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">3. Propiedad Intelectual</h5>
+                    <p class="mb-4">Todo el contenido del sitio (textos, imágenes, logotipos) es propiedad de Zapatería Ardillita y está protegido por leyes de propiedad intelectual.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">4. Limitación de Responsabilidad</h5>
+                    <p class="mb-4">Zapatería Ardillita no será responsable por daños indirectos o consecuentes resultantes del uso de este sitio.</p>
+                    
+                    <h5 class="font-bold mt-4 mb-2">5. Modificaciones</h5>
+                    <p class="mb-4">Podemos modificar estos términos en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio.</p>
+                    
+                    <p class="text-sm mt-6">Al utilizar nuestro sitio, usted acepta estos términos y condiciones en su totalidad.</p>
+                `;
+            }
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarModal() {
+            document.getElementById('modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Cerrar modal al hacer clic fuera del contenido
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                cerrarModal();
+            }
+        });
+
+        // Video Modal
+        const videoButtons = document.querySelectorAll('.video-button');
+        const videoModal = document.getElementById('videoModal');
+        const modalVideo = document.getElementById('modalVideo');
+        const closeModal = document.querySelector('.close-modal');
+
+        if(videoButtons.length && videoModal && modalVideo && closeModal) {
+            videoButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const videoSrc = this.getAttribute('data-video-src');
+                    modalVideo.querySelector('source').src = videoSrc;
+                    modalVideo.load();
+                    videoModal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                    modalVideo.play();
+                });
+            });
+
+            closeModal.addEventListener('click', function() {
+                modalVideo.pause();
+                modalVideo.currentTime = 0;
+                videoModal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+
+            videoModal.addEventListener('click', function(e) {
+                if(e.target === videoModal) {
+                    modalVideo.pause();
+                    modalVideo.currentTime = 0;
+                    videoModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if(e.key === 'Escape' && videoModal.style.display === 'block') {
+                    modalVideo.pause();
+                    modalVideo.currentTime = 0;
+                    videoModal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // Formulario de contacto
+        function showThanks(event) {
+            event.preventDefault();
+            
+            // Oculta el formulario
+            document.getElementById('contactForm').classList.add('hidden');
+            
+            // Muestra el mensaje de gracias
+            document.getElementById('thankYouMessage').classList.remove('hidden');
+            
+            // Opcional: Reinicia el formulario después de 5 segundos
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+                document.getElementById('contactForm').classList.remove('hidden');
+                document.getElementById('thankYouMessage').classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuero Gunate Blanco | Zapateria Ardillita</title>
+    
+    <!-- Mismos recursos que en el index -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/HERO/ardilla.png" type="image/x-icon">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#FFF0F3',
+                            100: '#FFD6E0',
+                            200: '#FFB6C1',
+                            300: '#FF8FA3',
+                            400: '#FF758F',
+                            500: '#FF477E',
+                            600: '#EB0055',
+                            700: '#C7004C',
+                            800: '#A80040',
+                            900: '#870033',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS personalizado para la página de producto -->
+    <link rel="stylesheet" href="../assets/css/producto.css">
+</head>
+<body class="font-sans bg-white text-gray-700">
+    <!-- Header (copiado del index para consistencia) -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <!-- ... mismo header que en tu index ... -->
+    </header>
+
+    <!-- Contenido principal del producto -->
+    <main class="pt-24 pb-16">
+        <div class="container mx-auto px-4 lg:px-6">
+            <!-- Breadcrumbs -->
+            <nav class="flex mb-6 text-sm">
+                <a href="/ardilla-main/index.html" class="text-primary-500 hover:text-primary-700">Inicio</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <a href="../nav/mujer.html" class="text-primary-500 hover:text-primary-700">Zapatos para niña</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span class="text-gray-600">V2504</span>
+            </nav>
+            
+            <!-- Grid principal del producto -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Galería de imágenes -->
+                <div class="product-gallery">
+                    <!-- Imagen principal -->
+                    <div class="relative bg-pink-50 rounded-xl overflow-hidden mb-4 h-96 flex items-center justify-center">
+                        <img id="mainImage" src="/ardilla-main/assets/imgpro/V2504/1..png" alt="Cuero Gunate Blanco" class="max-h-full object-contain p-8 transition-opacity duration-300">
+                        
+                        <!-- Badges -->
+                        <div class="absolute top-4 left-4 flex space-x-2">
+                            <span class="bg-primary-500 text-white text-xs font-bold px-2 py-1 rounded-full">NUEVO</span>
+                            <span class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">V2504</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Thumbnails -->
+                    <div class="grid grid-cols-5 gap-3">
+                        <div class="thumbnail active cursor-pointer border-2 border-primary-500 rounded-lg p-1 bg-white">
+                            <img src="/ardilla-main/assets/imgpro/V2504/1..png" alt="Vista 1" class="w-full h-16 object-contain" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail cursor-pointer border-2 border-transparent rounded-lg p-1 bg-white hover:border-primary-300">
+                            <img src="/ardilla-main/assets/imgpro/V2504/2.png" alt="Vista 2" class="w-full h-16 object-contain" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail cursor-pointer border-2 border-transparent rounded-lg p-1 bg-white hover:border-primary-300">
+                            <img src="/ardilla-main/assets/imgpro/V2504/3.png" alt="Vista 3" class="w-full h-16 object-contain" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail cursor-pointer border-2 border-transparent rounded-lg p-1 bg-white hover:border-primary-300">
+                            <img src="/ardilla-main/assets/imgpro/V2504/4.png" alt="Vista 4" class="w-full h-16 object-contain" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail cursor-pointer border-2 border-transparent rounded-lg p-1 bg-white hover:border-primary-300">
+                            <img src="/ardilla-main/assets/imgpro/V2504/5.png" alt="Vista 5" class="w-full h-16 object-contain" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail cursor-pointer border-2 border-transparent rounded-lg p-1 bg-white hover:border-primary-300">
+                            <img src="/ardilla-main/assets/imgpro/V2504/6.png" alt="Vista 6" class="w-full h-16 object-contain" onclick="changeImage(this)">
+                        </div>
+                        <div class="thumbnail cursor-pointer border-2 border-transparent rounded-lg p-1 bg-white hover:border-primary-300">
+                            <img src="/ardilla-main/assets/imgpro/V2504/7.png" alt="Vista 7" class="w-full h-16 object-contain" onclick="changeImage(this)">
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Información del producto -->
+                <div class="product-info">
+                    <h1 class="text-3xl font-heading font-bold text-gray-800 mb-2">PARA NIÑA V2504 Blanco</h1>
+                    <p class="text-gray-500 mb-4">Sandalia Para niña Coleccion Verano</p>
+                    
+                    <!-- Rating -->
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-400 text-sm mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-500 text-sm">128 reseñas</span>
+                        <span class="mx-2 text-gray-300">|</span>
+                        <span class="text-green-500 text-sm font-medium">En stock</span>
+                    </div>
+                    
+                    <!-- Precio -->
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-primary-600">En Stock</span>
+                        <span class="text-gray-400 line-through ml-2"></span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded-full ml-2">22% OFF</span>
+                    </div>
+                    
+                    <!-- Colores -->
+                    <div class="mb-6">
+                        <h3 class="font-medium text-gray-800 mb-3">Colores disponibles:</h3>
+                        <div class="flex space-x-3">
+                            <div class="color-option selected w-10 h-10 rounded-full border-2 border-primary-500" style="background-color: #ffffff;" title="Blanco"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tallas -->
+                    <div class="mb-8">
+                        <h3 class="font-medium text-gray-800 mb-3">Tallas disponibles:</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="talla-option px-4 py-2 border border-gray-200 rounded-lg hover:border-primary-500">18</button>
+                            <button class="talla-option px-4 py-2 border border-gray-200 rounded-lg hover:border-primary-500">19</button>
+                            <button class="talla-option px-4 py-2 border border-gray-200 rounded-lg hover:border-primary-500">20</button>
+                            <button class="talla-option px-4 py-2 border border-gray-200 rounded-lg hover:border-primary-500">21</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cantidad y botones -->
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="flex items-center border border-gray-200 rounded-lg">
+                            <button class="px-3 py-2 text-gray-600 hover:text-primary-500" onclick="decreaseQuantity()">-</button>
+                            <span id="quantity" class="px-4 py-2 border-x border-gray-200">1</span>
+                            <button class="px-3 py-2 text-gray-600 hover:text-primary-500" onclick="increaseQuantity()">+</button>
+                        </div>
+                        
+                        <button class="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-lg font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 flex items-center justify-center gap-2">
+                            <i class="fas fa-shopping-cart"></i> Añadir al carrito
+                        </button>
+                    </div>
+                    
+                    <!-- Botón favorito -->
+                    <button class="w-full border border-primary-500 text-primary-500 px-6 py-3 rounded-lg font-medium hover:bg-primary-50 transition-all mb-8 flex items-center justify-center gap-2">
+                        <i class="far fa-heart"></i> Añadir a favoritos
+                    </button>
+                    
+                    <!-- Acordeón de detalles -->
+                    <div class="border rounded-xl overflow-hidden mb-6">
+                        <div class="accordion-item border-b border-gray-100">
+                            <button class="accordion-header w-full px-5 py-4 text-left font-medium bg-gray-50 hover:bg-gray-100 flex justify-between items-center">
+                                <span>Descripción completa</span>
+                                <i class="fas fa-chevron-down text-primary-500 transition-transform"></i>
+                            </button>
+                            <div class="accordion-content px-5 py-4 hidden bg-white">
+                                <p class="text-gray-600">Sandalia para niña de la Colección Verano, elaborada en cuero genuino de alta calidad con suela antideslizante. Diseño cómodo y elegante perfecto para ocasiones especiales. La hebilla ajustable permite un ajuste perfecto al pie.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border-b border-gray-100">
+                            <button class="accordion-header w-full px-5 py-4 text-left font-medium bg-gray-50 hover:bg-gray-100 flex justify-between items-center">
+                                <span>Detalles del producto</span>
+                                <i class="fas fa-chevron-down text-primary-500 transition-transform"></i>
+                            </button>
+                            <div class="accordion-content px-5 py-4 hidden bg-white">
+                                <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                    <li><strong>Material:</strong> Cuero genuino</li>
+                                    <li><strong>Suela:</strong> Antideslizante</li>
+                                    <li><strong>Forro:</strong> Textil transpirable</li>
+                                    <li><strong>Cierre:</strong> Hebilla ajustable</li>
+                                    <li><strong>Edad recomendada:</strong> 4-8 años</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header w-full px-5 py-4 text-left font-medium bg-gray-50 hover:bg-gray-100 flex justify-between items-center">
+                                <span>Envío y devoluciones</span>
+                                <i class="fas fa-chevron-down text-primary-500 transition-transform"></i>
+                            </button>
+                            <div class="accordion-content px-5 py-4 hidden bg-white">
+                                <p class="text-gray-600">Envío gratuito para compras superiores a $50. Devoluciones gratuitas dentro de los 30 días.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Productos relacionados -->
+            <section class="mt-16">
+                <h2 class="text-2xl font-heading font-bold mb-8">Productos relacionados</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Producto relacionado 1 -->
+                    <div class="product-card group">
+                        <div class="product-inner bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 group-hover:shadow-lg">
+                            <div class="relative overflow-hidden h-64 bg-blue-50 flex items-center justify-center">
+                                <img src="../assets/img/V2505/1.png" alt="V2505" class="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-110">
+                                
+                                <!-- Quick actions -->
+                                <div class="absolute top-3 right-3 flex flex-col space-y-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="bg-white text-gray-700 w-8 h-8 rounded-full flex items-center justify-center shadow-md hover:bg-primary-500 hover:text-white transition-all">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="p-5">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="font-bold text-lg">Cuero Gunate Rosa</h3>
+                                    <span class="text-primary-500 font-bold">$49.99</span>
+                                </div>
+                                
+                                <p class="text-gray-500 text-sm mb-3">Sandalia Para niña Coleccion Verano</p>
+                                
+                                <div class="flex justify-between items-center">
+                                    <div class="flex text-yellow-400 text-sm">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <span class="text-gray-500 text-xs ml-1">(87)</span>
+                                    </div>
+                                    
+                                    <a href="v2505.html" class="bg-gradient-to-r from-primary-400 to-primary-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-md hover:shadow-lg transition-all hover:scale-105 flex items-center">
+                                        <i class="fas fa-cart-plus mr-1"></i> Detalle
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Más productos relacionados... -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer (copiado del index para consistencia) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <!-- ... mismo footer que en tu index ... -->
+    </footer>
+
+    <!-- JavaScript para la página de producto -->
+    <script>
+        // Cambiar imagen principal al hacer clic en thumbnail
+        function changeImage(element) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = element.src;
+            
+            // Actualizar thumbnails activos
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active', 'border-primary-500');
+                thumb.classList.add('border-transparent');
+            });
+            element.parentElement.classList.add('active', 'border-primary-500');
+            element.parentElement.classList.remove('border-transparent');
+        }
+        
+        // Selección de colores
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.color-option').forEach(opt => {
+                    opt.classList.remove('selected', 'border-primary-500');
+                });
+                this.classList.add('selected', 'border-primary-500');
+            });
+        });
+        
+        // Selección de tallas
+        document.querySelectorAll('.talla-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.talla-option').forEach(opt => {
+                    opt.classList.remove('selected', 'bg-primary-500', 'text-white', 'border-primary-500');
+                    opt.classList.add('border-gray-200', 'hover:border-primary-500');
+                });
+                this.classList.add('selected', 'bg-primary-500', 'text-white', 'border-primary-500');
+                this.classList.remove('border-gray-200', 'hover:border-primary-500');
+            });
+        });
+        
+        // Manejo de cantidad
+        function increaseQuantity() {
+            const quantityElement = document.getElementById('quantity');
+            let quantity = parseInt(quantityElement.textContent);
+            quantityElement.textContent = quantity + 1;
+        }
+        
+        function decreaseQuantity() {
+            const quantityElement = document.getElementById('quantity');
+            let quantity = parseInt(quantityElement.textContent);
+            if (quantity > 1) {
+                quantityElement.textContent = quantity - 1;
+            }
+        }
+        
+        // Acordeón
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const icon = header.querySelector('i');
+                
+                // Alternar contenido
+                content.classList.toggle('hidden');
+                
+                // Rotar icono
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+                
+                // Cambiar fondo del header
+                header.classList.toggle('bg-gray-50');
+                header.classList.toggle('bg-gray-100');
+            });
+        });
+    </script>
+</body>
+</html>

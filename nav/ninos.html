@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria Ardillita | Zapatos para Niños</title>
+    <meta name="description" content="Zapatos de calidad para niños. Diseñados para comodidad, durabilidad y estilo.">
+    
+    <!-- Preload de fuentes y recursos críticos -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon y meta tags para redes sociales -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#A7C7E7">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zapateriaardillita.com/ninos">
+    <meta property="og:title" content="Zapateria Ardillita | Zapatos para Niños">
+    <meta property="og:description" content="Zapatos de calidad para niños. Diseñados para comodidad, durabilidad y estilo.">
+    <meta property="og:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zapateriaardillita.com/ninos">
+    <meta property="twitter:title" content="Zapateria Ardillita | Zapatos para Niños">
+    <meta property="twitter:description" content="Zapatos de calidad para niños. Diseñados para comodidad, durabilidad y estilo.">
+    <meta property="twitter:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+
+    <link rel="shortcut icon" href="../assets/img/HERO/ardilla.ico" type="image/x-icon">
+
+    <!-- Tailwind CSS con configuración personalizada -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#F0F7FF',
+                            100: '#E1EFFE',
+                            200: '#A7C7E7',
+                            300: '#7FB3D5',
+                            400: '#5A9BD5',
+                            500: '#3A86D4',
+                            600: '#2C6CB0',
+                            700: '#1E4E8C',
+                            800: '#153E75',
+                            900: '#1A365D',
+                        },
+                        secondary: {
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95',
+                        },
+                        accent: {
+                            50: '#F0FDF4',
+                            100: '#DCFCE7',
+                            200: '#BBF7D0',
+                            300: '#86EFAC',
+                            400: '#4ADE80',
+                            500: '#22C55E',
+                            600: '#16A34A',
+                            700: '#15803D',
+                            800: '#166534',
+                            900: '#14532D',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS personalizado optimizado -->
+    <style>
+        /* Estilos base optimizados */
+        body {
+            background-color: #fff;
+            color: #374151;
+            font-family: 'Quicksand', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            text-rendering: optimizeLegibility;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', 'Quicksand', sans-serif;
+            color: #1f2937;
+            letter-spacing: -0.015em;
+        }
+
+        .transition-all-slow {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .shadow-soft {
+            box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+        }
+
+        .shadow-hover {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+        }
+
+        .glass {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .img-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-contain {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+
+        .animate-wiggle {
+            animation: wiggle 1s ease-in-out infinite;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+
+        .wave .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        }
+
+        .mobile-menu.open .skeleton {
+            background-color: #e5e7eb; 
+            animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        .skeleton {
+            background-color: #e5e7eb;
+            animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        .product-card {
+            perspective: 1000px;
+        }
+
+        .product-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .product-card:hover .product-inner {
+            transform: rotateY(10deg);
+        }
+
+        .neon-effect {
+            text-shadow: 0 0 5px rgba(167, 199, 231, 0.5), 0 0 10px rgba(167, 199, 231, 0.3);
+        }
+
+        .gradient-animate {
+            background-size: 200% 200%;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Estilos personalizados para la página de niños */
+        .bg-pastel-blue {
+            background-color: #A7C7E7;
+        }
+
+        .bg-pastel-light {
+            background-color: #E1EFFE;
+        }
+
+        .bg-pastel-dark {
+            background-color: #3A86D4;
+        }
+
+        .text-pastel-accent {
+            color: #22C55E;
+        }
+
+        .bg-pastel-accent {
+            background-color: #22C55E;
+        }
+
+        .border-pastel-accent {
+            border-color: #22C55E;
+        }
+
+        .color-option.selected {
+            box-shadow: 0 0 0 2px #3A86D4;
+        }
+
+        /* Ajustes para mostrar 2 productos en móvil */
+        @media (max-width: 639px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body class="relative">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500">
+        <div class="relative w-24 h-24 mb-4">
+            <div class="absolute inset-0 rounded-full border-4 border-t-primary-500 border-r-primary-300 border-b-primary-400 border-l-primary-200 animate-spin"></div>
+            <div class="absolute inset-4 rounded-full border-4 border-transparent"></div>
+            <div class="absolute inset-8 flex items-center justify-center">
+                <img 
+                    src="../assets/img/HERO/ardilla.png" 
+                    alt="Icono Ardillita"
+                    class="w-10 h-10 animate-pulse-slow"
+                >
+            </div>
+        </div>
+        <h2 class="text-xl font-heading text-gray-700">Zapateria Ardillita...</h2>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="flex justify-between items-center py-3">
+                <a href="#" class="flex items-center space-x-2">
+                    <span class="text-2xl font-heading font-bold text-gray-800">Zapateria<span class="text-primary-500">Ardillita</span></span>
+                </a>
+                
+                <!-- Menú principal desktop -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="../index.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Inicio</a>
+                    <a href="ninos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niños</a>
+                    <a href="ninas.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niñas</a>
+                    <a href="nacidos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Recién Nacidos</a>
+                    <a href="caminantes.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Categorías</a>
+                    <a href="nosotros.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Nosotros</a>
+                    <a href="contacto.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Contacto</a>
+                </nav>
+                
+                <!-- Iconos de acción -->
+                <div class="flex items-center space-x-4">
+                    <!-- Botón de favoritos -->
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="wishlist-btn">
+                        <i class="far fa-heart text-xl"></i>
+                    </button>
+                    
+                    <!-- Botón de carrito -->
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="cart-btn">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                    </button>
+                    
+                    <!-- Botón de menú móvil -->
+                    <button class="p-2 text-gray-600 hover:text-primary-500 lg:hidden" id="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    
+                    <!-- Botón de WhatsApp mejorado -->
+                    <a href="https://wa.me/51997758740" 
+                       target="_blank"
+                       class="hidden md:flex items-center space-x-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all hover:scale-105">
+                        <i class="fab fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-3">
+                <div class="grid grid-cols-1 divide-y divide-gray-100">
+                    <a href="../index.html" class="py-3 text-gray-700 font-medium">Inicio</a>
+                    <a href="ninos.html" class="py-3 text-gray-700 font-medium">Niños</a>
+                    <a href="ninas.html" class="py-3 text-gray-700 font-medium">Niñas</a>
+                    <a href="nacidos.html" class="py-3 text-gray-700 font-medium">Nacidos</a>
+                    <a href="caminantes.html" class="py-3 text-gray-700 font-medium">Caminantes</a>
+                    <a href="nosotros.html" class="py-3 text-gray-700 font-medium">Nosotros</a>
+                    <a href="contacto.html" class="py-3 text-gray-700 font-medium">Contacto</a>
+                    
+                    <div class="py-3 flex space-x-4">
+                        <a href="#" class="bg-secondary-500 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fas fa-store mr-2"></i>Tienda
+                        </a>
+                        <a href="https://wa.me/51997758740" class="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fab fa-whatsapp mr-2"></i> Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="pt-24 pb-12">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-primary-200 to-primary-100 py-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Zapatos para Niños</h1>
+                        <p class="text-lg text-gray-700 mb-6">Encuentra los zapatos perfectos para los pequeños aventureros. Diseñados para comodidad, durabilidad y estilo.</p>
+                        <div class="flex space-x-4">
+                            <a href="#products" class="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-6 rounded-full transition-all shadow-md hover:shadow-lg">
+                                Ver Colección
+                            </a>
+                            <a href="#categories" class="border-2 border-primary-500 text-primary-500 hover:bg-primary-50 font-medium py-2 px-6 rounded-full transition-all">
+                                Explorar Categorías
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="../assets/img/HERO/9.png" 
+                             alt="Zapatos para niños" 
+                             class="rounded-lg shadow-xl w-full max-w-md transform rotate-2 hover:rotate-0 transition-transform duration-300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filtros y categorías -->
+        <section class="py-8 px-4 sm:px-6 lg:px-8 bg-white" id="products">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Filtros (sidebar) -->
+                    <aside class="lg:w-1/4 pr-0 lg:pr-8 mb-8 lg:mb-0">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 sticky top-32">
+                            <h3 class="text-xl font-bold mb-6 text-gray-800 flex items-center">
+                                <i class="fas fa-filter mr-2 text-primary-500"></i> Filtros
+                            </h3>
+                            
+                            <!-- Filtro por categoría -->
+                            <div class="mb-6">
+                                <div class="flex justify-between items-center cursor-pointer filter-toggle" data-target="category-filter">
+                                    <h4 class="font-medium text-gray-700">Categorías</h4>
+                                    <span class="transform transition-transform"><i class="fas fa-chevron-down text-xs"></i></span>
+                                </div>
+                                <div id="category-filter" class="filter-section mt-3 overflow-hidden transition-all duration-300 max-h-0">
+                                    <div class="space-y-2">
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-500 rounded border-gray-300 focus:ring-primary-500 category-filter" value="all" checked>
+                                            <span class="ml-2 text-gray-600">Todos</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-500 rounded border-gray-300 focus:ring-primary-500 category-filter" value="deportivos">
+                                            <span class="ml-2 text-gray-600">Deportivos</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-500 rounded border-gray-300 focus:ring-primary-500 category-filter" value="casuales">
+                                            <span class="ml-2 text-gray-600">Casuales</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-500 rounded border-gray-300 focus:ring-primary-500 category-filter" value="formales">
+                                            <span class="ml-2 text-gray-600">Formales</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-500 rounded border-gray-300 focus:ring-primary-500 category-filter" value="sandalias">
+                                            <span class="ml-2 text-gray-600">Sandalias</span>
+                                        </label>
+                                        <label class="flex items-center">
+                                            <input type="checkbox" class="form-checkbox h-4 w-4 text-primary-500 rounded border-gray-300 focus:ring-primary-500 category-filter" value="botas">
+                                            <span class="ml-2 text-gray-600">Botas</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Filtro por talla -->
+                            <div class="mb-6">
+                                <div class="flex justify-between items-center cursor-pointer filter-toggle" data-target="size-filter">
+                                    <h4 class="font-medium text-gray-700">Tallas</h4>
+                                    <span class="transform transition-transform"><i class="fas fa-chevron-down text-xs"></i></span>
+                                </div>
+                                <div id="size-filter" class="filter-section mt-3 overflow-hidden transition-all duration-300 max-h-0">
+                                    <div class="size-selector grid grid-cols-4 gap-2">
+                                        <input type="radio" name="size" id="size-all" class="hidden size-filter" value="all" checked>
+                                        <label for="size-all" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">Todas</label>
+                                        
+                                        <input type="radio" name="size" id="size-24" class="hidden size-filter" value="24">
+                                        <label for="size-24" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">24</label>
+                                        
+                                        <input type="radio" name="size" id="size-25" class="hidden size-filter" value="25">
+                                        <label for="size-25" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">25</label>
+                                        
+                                        <input type="radio" name="size" id="size-26" class="hidden size-filter" value="26">
+                                        <label for="size-26" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">26</label>
+                                        
+                                        <input type="radio" name="size" id="size-27" class="hidden size-filter" value="27">
+                                        <label for="size-27" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">27</label>
+                                        
+                                        <input type="radio" name="size" id="size-28" class="hidden size-filter" value="28">
+                                        <label for="size-28" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">28</label>
+                                        
+                                        <input type="radio" name="size" id="size-29" class="hidden size-filter" value="29">
+                                        <label for="size-29" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">29</label>
+                                        
+                                        <input type="radio" name="size" id="size-30" class="hidden size-filter" value="30">
+                                        <label for="size-30" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">30</label>
+                                        
+                                        <input type="radio" name="size" id="size-31" class="hidden size-filter" value="31">
+                                        <label for="size-31" class="flex items-center justify-center border border-gray-200 rounded-md py-2 text-sm cursor-pointer transition-all hover:border-primary-500">31</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Filtro por color -->
+                            <div class="mb-6">
+                                <div class="flex justify-between items-center cursor-pointer filter-toggle" data-target="color-filter">
+                                    <h4 class="font-medium text-gray-700">Colores</h4>
+                                    <span class="transform transition-transform"><i class="fas fa-chevron-down text-xs"></i></span>
+                                </div>
+                                <div id="color-filter" class="filter-section mt-3 overflow-hidden transition-all duration-300 max-h-0">
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="color-option w-8 h-8 rounded-full bg-blue-500 cursor-pointer border-2 border-white shadow-sm" data-color="blue" title="Azul"></div>
+                                        <div class="color-option w-8 h-8 rounded-full bg-red-500 cursor-pointer border-2 border-white shadow-sm" data-color="red" title="Rojo"></div>
+                                        <div class="color-option w-8 h-8 rounded-full bg-green-500 cursor-pointer border-2 border-white shadow-sm" data-color="green" title="Verde"></div>
+                                        <div class="color-option w-8 h-8 rounded-full bg-yellow-500 cursor-pointer border-2 border-white shadow-sm" data-color="yellow" title="Amarillo"></div>
+                                        <div class="color-option w-8 h-8 rounded-full bg-black cursor-pointer border-2 border-white shadow-sm" data-color="black" title="Negro"></div>
+                                        <div class="color-option w-8 h-8 rounded-full bg-white cursor-pointer border-2 border-gray-200 shadow-sm" data-color="white" title="Blanco"></div>
+                                        <div class="color-option w-8 h-8 rounded-full bg-gray-500 cursor-pointer border-2 border-white shadow-sm" data-color="gray" title="Gris"></div>
+                                        <div class="color-option w-8 h-8 rounded-full bg-pink-500 cursor-pointer border-2 border-white shadow-sm" data-color="pink" title="Rosado"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Filtro por precio -->
+                            <div class="mb-6">
+                                <div class="flex justify-between items-center cursor-pointer filter-toggle" data-target="price-filter">
+                                    <h4 class="font-medium text-gray-700">Rango de Precio</h4>
+                                    <span class="transform transition-transform"><i class="fas fa-chevron-down text-xs"></i></span>
+                                </div>
+                                <div id="price-filter" class="filter-section mt-3 overflow-hidden transition-all duration-300 max-h-0">
+                                    <div class="mb-2">
+                                        <input type="range" min="50" max="500" value="500" step="10" class="w-full h-2 bg-primary-200 rounded-lg appearance-none cursor-pointer" id="price-range">
+                                    </div>
+                                    <div class="flex justify-between text-sm text-gray-600">
+                                        <span>S/50</span>
+                                        <span>S/500</span>
+                                    </div>
+                                    <div class="mt-2 text-center">
+                                        <span id="price-value" class="font-medium text-primary-500">Hasta S/500</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button id="apply-filters" class="w-full bg-primary-500 hover:bg-primary-600 text-white py-2 px-4 rounded-md transition-colors mt-4">
+                                Aplicar Filtros
+                            </button>
+                            <button id="clear-filters" class="w-full border border-primary-500 text-primary-500 hover:bg-primary-50 py-2 px-4 rounded-md transition-colors mt-2">
+                                Limpiar Filtros
+                            </button>
+                        </div>
+                    </aside>
+                    
+                    <!-- Lista de productos -->
+                    <div class="lg:w-3/4">
+                        <!-- Barra de ordenamiento y resultados -->
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <div class="mb-4 sm:mb-0">
+                                <p class="text-gray-600">Mostrando <span id="showing-count" class="font-medium">12</span> de <span id="total-count" class="font-medium">12</span> productos</p>
+                            </div>
+                            <div class="flex items-center">
+                                <label for="sort-by" class="mr-2 text-gray-600">Ordenar por:</label>
+                                <select id="sort-by" class="border border-gray-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent">
+                                    <option value="popular">Más populares</option>
+                                    <option value="price-asc">Precio: menor a mayor</option>
+                                    <option value="price-desc">Precio: mayor a menor</option>
+                                    <option value="newest">Más recientes</option>
+                                    <option value="rating">Mejor valorados</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Grid de productos -->
+                        <div class="product-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Los productos se cargarán dinámicamente aquí -->
+                        </div>
+                        
+                        <!-- Paginación -->
+                        <div class="flex justify-center mt-10">
+                            <nav class="flex items-center space-x-1">
+                                <button class="px-3 py-1 rounded-md border border-gray-200 text-gray-500 hover:bg-primary-50 pagination-btn" data-page="prev">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="px-3 py-1 rounded-md bg-primary-500 text-white pagination-btn active" data-page="1">1</button>
+                                <button class="px-3 py-1 rounded-md border border-gray-200 text-gray-700 hover:bg-primary-50 pagination-btn" data-page="2">2</button>
+                                <button class="px-3 py-1 rounded-md border border-gray-200 text-gray-700 hover:bg-primary-50 pagination-btn" data-page="3">3</button>
+                                <span class="px-2 text-gray-500">...</span>
+                                <button class="px-3 py-1 rounded-md border border-gray-200 text-gray-700 hover:bg-primary-50 pagination-btn" data-page="8">8</button>
+                                <button class="px-3 py-1 rounded-md border border-gray-200 text-gray-500 hover:bg-primary-50 pagination-btn" data-page="next">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características destacadas -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8 bg-primary-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">¿Por qué elegir nuestros zapatos para niños?</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Diseñados pensando en la comodidad, seguridad y estilo de los más pequeños</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heart text-2xl text-primary-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Materiales de Calidad</h3>
+                        <p class="text-gray-600">Fabricados con materiales hipoalergénicos, transpirables y resistentes para la piel sensible de los niños.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shoe-prints text-2xl text-primary-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Diseño Anatómico</h3>
+                        <p class="text-gray-600">Suelas flexibles y plantillas ergonómicas que favorecen el correcto desarrollo del pie infantil.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-palette text-2xl text-primary-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Estilos Diversos</h3>
+                        <p class="text-gray-600">Desde diseños clásicos hasta los más modernos, para todos los gustos y ocasiones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guía de tallas -->
+        <section class="py-12 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Guía de Tallas</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">Encuentra el tamaño perfecto para los pies de tu pequeño</p>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full border-collapse">
+                        <thead>
+                            <tr class="bg-primary-500 text-white">
+                                <th class="py-3 px-4 text-left rounded-tl-lg">Edad</th>
+                                <th class="py-3 px-4 text-left">Talla EU</th>
+                                <th class="py-3 px-4 text-left">Longitud pie (cm)</th>
+                                <th class="py-3 px-4 text-left rounded-tr-lg">Recomendación</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-primary-50">
+                                <td class="py-3 px-4">1-2 años</td>
+                                <td class="py-3 px-4">20-23</td>
+                                <td class="py-3 px-4">12.5-14.5 cm</td>
+                                <td class="py-3 px-4">Dejar 1 cm de espacio</td>
+                            </tr>
+                            <tr class="hover:bg-primary-50">
+                                <td class="py-3 px-4">2-3 años</td>
+                                <td class="py-3 px-4">24-26</td>
+                                <td class="py-3 px-4">14.5-16 cm</td>
+                                <td class="py-3 px-4">Dejar 1 cm de espacio</td>
+                            </tr>
+                            <tr class="hover:bg-primary-50">
+                                <td class="py-3 px-4">4-5 años</td>
+                                <td class="py-3 px-4">27-29</td>
+                                <td class="py-3 px-4">16-18 cm</td>
+                                <td class="py-3 px-4">Dejar 0.8-1 cm de espacio</td>
+                            </tr>
+                            <tr class="hover:bg-primary-50">
+                                <td class="py-3 px-4">6-8 años</td>
+                                <td class="py-3 px-4">30-32</td>
+                                <td class="py-3 px-4">18-20.5 cm</td>
+                                <td class="py-3 px-4">Dejar 0.8 cm de espacio</td>
+                            </tr>
+                            <tr class="hover:bg-primary-50">
+                                <td class="py-3 px-4">9-12 años</td>
+                                <td class="py-3 px-4">33-36</td>
+                                <td class="py-3 px-4">20.5-23 cm</td>
+                                <td class="py-3 px-4">Dejar 0.5-0.8 cm de espacio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-8 bg-primary-50 p-6 rounded-lg border border-primary-100">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">¿Cómo medir el pie de tu niño?</h3>
+                    <ol class="list-decimal pl-5 space-y-2 text-gray-700">
+                        <li>Coloca una hoja de papel en el suelo contra la pared.</li>
+                        <li>Pon al niño de pie sobre el papel con el talón tocando la pared.</li>
+                        <li>Marca el punto más largo del pie (generalmente el dedo gordo).</li>
+                        <li>Mide la distancia desde la pared hasta la marca en centímetros.</li>
+                        <li>Añade 0.5-1 cm para el espacio de crecimiento y consulta nuestra tabla.</li>
+                    </ol>
+                    <div class="mt-4 flex justify-center">
+                        <img src="../assets/img/NOSOTROS/1.jpeg" 
+                             alt="Medición de pies de niño" 
+                             class="rounded-lg max-w-xs">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Zapateria Ardillita</h3>
+                    <p class="text-gray-300 mb-4">Calzado de calidad para los más pequeños, diseñado con amor y cuidado.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Categorías</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Deportivos</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Casuales</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Formales</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Sandalias</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Botas</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Ayuda</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Guía de tallas</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Preguntas frecuentes</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Métodos de pago</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Envíos y devoluciones</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-primary-300"></i>
+                            <span class="text-gray-300">Av. Ejemplo 123, Lima, Perú</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-primary-300"></i>
+                            <span class="text-gray-300">+51 987 654 321</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-primary-300"></i>
+                            <span class="text-gray-300">info@zapateriaardillita.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2 text-primary-300"></i>
+                            <span class="text-gray-300">Lun-Vie: 9am - 7pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm mb-4 md:mb-0">© 2023 Zapateria Ardillita. Todos los derechos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Términos y condiciones</a>
+                    <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/51997758740" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Botón flotante para volver arriba -->
+    <button id="backToTop" class="fixed bottom-6 left-6 bg-primary-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all z-40 opacity-0 invisible">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Datos de productos (simulando una base de datos)
+        const productsData = [
+            {
+                id: 1,
+                name: "Zapatos Deportivos Runner",
+                description: "Para niños de 6-10 años",
+                price: 89.90,
+                oldPrice: 112.90,
+                discount: 20,
+                category: "deportivos",
+                sizes: [24, 25, 26, 27],
+                colors: ["blue", "black", "red"],
+                rating: 4.5,
+                reviews: 24,
+                image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: true
+            },
+            {
+                id: 2,
+                name: "Zapatos Casuales Urban",
+                description: "Para niños de 4-8 años",
+                price: 75.90,
+                oldPrice: null,
+                discount: 0,
+                category: "casuales",
+                sizes: [24, 25, 26],
+                colors: ["blue", "gray", "white"],
+                rating: 4.0,
+                reviews: 18,
+                image: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: false
+            },
+            {
+                id: 3,
+                name: "Zapatos Formales Elegance",
+                description: "Para niños de 8-12 años",
+                price: 120.90,
+                oldPrice: null,
+                discount: 0,
+                category: "formales",
+                sizes: [28, 29, 30, 31],
+                colors: ["black", "gray"],
+                rating: 5.0,
+                reviews: 32,
+                image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: true,
+                isOffer: false
+            },
+            {
+                id: 4,
+                name: "Botas Aventureras",
+                description: "Para niños de 5-9 años",
+                price: 95.90,
+                oldPrice: null,
+                discount: 0,
+                category: "botas",
+                sizes: [25, 26, 27, 28],
+                colors: ["brown", "black", "gray"],
+                rating: 4.5,
+                reviews: 21,
+                image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: false
+            },
+            {
+                id: 5,
+                name: "Sandalias Playeras",
+                description: "Para niños de 3-7 años",
+                price: 45.90,
+                oldPrice: 59.90,
+                discount: 23,
+                category: "sandalias",
+                sizes: [24, 25, 26],
+                colors: ["blue", "red", "yellow"],
+                rating: 4.0,
+                reviews: 15,
+                image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: true
+            },
+            {
+                id: 6,
+                name: "Zapatos de Vestir Classic",
+                description: "Para niños de 7-11 años",
+                price: 110.90,
+                oldPrice: null,
+                discount: 0,
+                category: "formales",
+                sizes: [27, 28, 29, 30],
+                colors: ["black", "brown"],
+                rating: 5.0,
+                reviews: 28,
+                image: "https://images.unsplash.com/photo-1605348532760-6753d2c38ed8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: false
+            },
+            {
+                id: 7,
+                name: "Zapatillas Running Pro",
+                description: "Para niños de 9-12 años",
+                price: 99.90,
+                oldPrice: 129.90,
+                discount: 23,
+                category: "deportivos",
+                sizes: [28, 29, 30, 31],
+                colors: ["blue", "black", "red"],
+                rating: 4.5,
+                reviews: 36,
+                image: "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: true
+            },
+            {
+                id: 8,
+                name: "Mocasines Elegantes",
+                description: "Para niños de 5-8 años",
+                price: 85.90,
+                oldPrice: null,
+                discount: 0,
+                category: "formales",
+                sizes: [25, 26, 27],
+                colors: ["black", "brown"],
+                rating: 4.0,
+                reviews: 19,
+                image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: true,
+                isOffer: false
+            },
+            {
+                id: 9,
+                name: "Botines Invierno",
+                description: "Para niños de 6-10 años",
+                price: 115.90,
+                oldPrice: null,
+                discount: 0,
+                category: "botas",
+                sizes: [26, 27, 28, 29],
+                colors: ["black", "gray"],
+                rating: 4.5,
+                reviews: 27,
+                image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: false
+            },
+            {
+                id: 10,
+                name: "Zapatos Escolares",
+                description: "Para niños de 7-11 años",
+                price: 79.90,
+                oldPrice: 99.90,
+                discount: 20,
+                category: "casuales",
+                sizes: [27, 28, 29, 30],
+                colors: ["black", "blue"],
+                rating: 4.0,
+                reviews: 22,
+                image: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: true
+            },
+            {
+                id: 11,
+                name: "Sandalias Deportivas",
+                description: "Para niños de 4-7 años",
+                price: 65.90,
+                oldPrice: null,
+                discount: 0,
+                category: "sandalias",
+                sizes: [24, 25, 26],
+                colors: ["blue", "black", "red"],
+                rating: 4.5,
+                reviews: 17,
+                image: "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: false,
+                isOffer: false
+            },
+            {
+                id: 12,
+                name: "Zapatos de Cuero Premium",
+                description: "Para niños de 8-12 años",
+                price: 135.90,
+                oldPrice: null,
+                discount: 0,
+                category: "formales",
+                sizes: [28, 29, 30, 31],
+                colors: ["black", "brown"],
+                rating: 5.0,
+                reviews: 31,
+                image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+                isNew: true,
+                isOffer: false
+            }
+        ];
+
+        // Variables globales
+        let currentPage = 1;
+        const productsPerPage = 6;
+        let filteredProducts = [...productsData];
+        let selectedCategories = [];
+        let selectedSize = 'all';
+        let selectedColor = null;
+        let maxPrice = 500;
+        let sortBy = 'popular';
+
+        // DOM Elements
+        const productGrid = document.querySelector('.product-grid');
+        const showingCount = document.getElementById('showing-count');
+        const totalCount = document.getElementById('total-count');
+        const priceRange = document.getElementById('price-range');
+        const priceValue = document.getElementById('price-value');
+        const sortSelect = document.getElementById('sort-by');
+        const applyFiltersBtn = document.getElementById('apply-filters');
+        const clearFiltersBtn = document.getElementById('clear-filters');
+        const wishlistBtn = document.getElementById('wishlist-btn');
+        const cartBtn = document.getElementById('cart-btn');
+        const backToTopBtn = document.getElementById('backToTop');
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cargar productos
+            renderProducts();
+            
+            // Configurar eventos
+            setupEventListeners();
+            
+            // Mostrar total de productos
+            totalCount.textContent = productsData.length;
+            
+            // Inicializar filtros (abrir todos por defecto en desktop)
+            if (window.innerWidth >= 1024) {
+                document.querySelectorAll('.filter-section').forEach(section => {
+                    section.style.maxHeight = section.scrollHeight + 'px';
+                    const toggle = document.querySelector(`.filter-toggle[data-target="${section.id}"]`);
+                    toggle.querySelector('span').classList.add('rotate-180');
+                });
+            }
+        });
+
+        // Configurar event listeners
+        function setupEventListeners() {
+            // Filtros desplegables
+            const filterToggles = document.querySelectorAll('.filter-toggle');
+            
+            filterToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const targetId = this.getAttribute('data-target');
+                    const target = document.getElementById(targetId);
+                    const icon = this.querySelector('span i');
+                    
+                    if (target.style.maxHeight === '0px' || !target.style.maxHeight) {
+                        target.style.maxHeight = target.scrollHeight + 'px';
+                        icon.classList.add('rotate-180');
+                    } else {
+                        target.style.maxHeight = '0';
+                        icon.classList.remove('rotate-180');
+                    }
+                });
+            });
+
+            // Selector de colores
+            const colorOptions = document.querySelectorAll('.color-option');
+            
+            colorOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    colorOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                    selectedColor = this.getAttribute('data-color');
+                });
+            });
+
+            // Control de rango de precios
+            if (priceRange && priceValue) {
+                priceRange.addEventListener('input', function() {
+                    maxPrice = parseInt(this.value);
+                    priceValue.textContent = `Hasta S/${maxPrice}`;
+                });
+            }
+
+            // Wishlist
+            wishlistButtons = document.querySelectorAll('.wishlist-btn');
+            
+            wishlistButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('far');
+                    icon.classList.toggle('fas');
+                    icon.classList.toggle('text-primary-500');
+                    
+                    // Actualizar contador
+                    const wishlistCounter = document.querySelector('#wishlist-btn span');
+                    if (icon.classList.contains('fas')) {
+                        wishlistCounter.textContent = parseInt(wishlistCounter.textContent) + 1;
+                    } else {
+                        wishlistCounter.textContent = parseInt(wishlistCounter.textContent) - 1;
+                    }
+                });
+            });
+
+            // Botones "Añadir al carrito"
+            addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Animación
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check mr-1"></i> Añadido';
+                    this.classList.remove('bg-primary-500');
+                    this.classList.add('bg-green-500');
+                    
+                    // Actualizar contador del carrito
+                    const cartCounter = document.querySelector('#cart-btn span');
+                    cartCounter.textContent = parseInt(cartCounter.textContent) + 1;
+                    
+                    // Resetear después de 2 segundos
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.classList.add('bg-primary-500');
+                        this.classList.remove('bg-green-500');
+                    }, 2000);
+                });
+            });
+
+            // Ordenamiento de productos
+            if (sortSelect) {
+                sortSelect.addEventListener('change', function() {
+                    sortBy = this.value;
+                    applyFilters();
+                });
+            }
+
+            // Aplicar filtros
+            applyFiltersBtn.addEventListener('click', applyFilters);
+
+            // Limpiar filtros
+            clearFiltersBtn.addEventListener('click', clearFilters);
+
+            // Categorías
+            const categoryFilters = document.querySelectorAll('.category-filter');
+            categoryFilters.forEach(filter => {
+                filter.addEventListener('change', function() {
+                    if (this.value === 'all') {
+                        // Si se selecciona "Todos", deseleccionar los demás
+                        if (this.checked) {
+                            document.querySelectorAll('.category-filter:not([value="all"])').forEach(cb => {
+                                cb.checked = false;
+                            });
+                            selectedCategories = [];
+                        }
+                    } else {
+                        // Si se selecciona una categoría específica, deseleccionar "Todos"
+                        document.querySelector('.category-filter[value="all"]').checked = false;
+                        
+                        if (this.checked) {
+                            selectedCategories.push(this.value);
+                        } else {
+                            selectedCategories = selectedCategories.filter(cat => cat !== this.value);
+                        }
+                    }
+                });
+            });
+
+            // Tallas
+            const sizeFilters = document.querySelectorAll('.size-filter');
+            sizeFilters.forEach(filter => {
+                filter.addEventListener('change', function() {
+                    selectedSize = this.value;
+                });
+            });
+
+            // Paginación
+            const paginationButtons = document.querySelectorAll('.pagination-btn');
+            paginationButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const page = this.getAttribute('data-page');
+                    
+                    if (page === 'prev' && currentPage > 1) {
+                        currentPage--;
+                    } else if (page === 'next' && currentPage < Math.ceil(filteredProducts.length / productsPerPage)) {
+                        currentPage++;
+                    } else if (!isNaN(page)) {
+                        currentPage = parseInt(page);
+                    }
+                    
+                    renderProducts();
+                    updatePaginationUI();
+                });
+            });
+
+            // Back to Top Button
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.remove('opacity-0', 'invisible');
+                    backToTopBtn.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopBtn.classList.remove('opacity-100', 'visible');
+                    backToTopBtn.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('open');
+
+                // Ajustar la altura para animar el menú
+                if (mobileMenu.classList.contains('open')) {
+                    mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+                } else {
+                    mobileMenu.style.maxHeight = '0';
+                }
+
+                // Cambiar icono
+                const icon = mobileMenuButton.querySelector('i');
+                if (mobileMenu.classList.contains('open')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+
+        // Aplicar filtros
+        function applyFilters() {
+            currentPage = 1; // Resetear a la primera página
+            
+            // Filtrar por categoría
+            if (selectedCategories.length > 0) {
+                filteredProducts = productsData.filter(product => 
+                    selectedCategories.includes(product.category)
+                );
+            } else {
+                filteredProducts = [...productsData];
+            }
+            
+            // Filtrar por talla
+            if (selectedSize !== 'all') {
+                const sizeNum = parseInt(selectedSize);
+                filteredProducts = filteredProducts.filter(product => 
+                    product.sizes.includes(sizeNum)
+                );
+            }
+            
+            // Filtrar por color
+            if (selectedColor) {
+                filteredProducts = filteredProducts.filter(product => 
+                    product.colors.includes(selectedColor)
+                );
+            }
+            
+            // Filtrar por precio
+            filteredProducts = filteredProducts.filter(product => 
+                product.price <= maxPrice
+            );
+            
+            // Ordenar productos
+            sortProducts();
+            
+            // Actualizar UI
+            renderProducts();
+            updatePaginationUI();
+            
+            // Mostrar conteo de productos
+            showingCount.textContent = filteredProducts.length;
+            totalCount.textContent = productsData.length;
+        }
+
+        // Limpiar filtros
+        function clearFilters() {
+            // Resetear categorías
+            document.querySelector('.category-filter[value="all"]').checked = true;
+            document.querySelectorAll('.category-filter:not([value="all"])').forEach(cb => {
+                cb.checked = false;
+            });
+            selectedCategories = [];
+            
+            // Resetear talla
+            document.getElementById('size-all').checked = true;
+            selectedSize = 'all';
+            
+            // Resetear color
+            document.querySelectorAll('.color-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            selectedColor = null;
+            
+            // Resetear precio
+            priceRange.value = 500;
+            priceValue.textContent = 'Hasta S/500';
+            maxPrice = 500;
+            
+            // Resetear ordenamiento
+            sortSelect.value = 'popular';
+            sortBy = 'popular';
+            
+            // Aplicar filtros (que ahora están todos reseteados)
+            applyFilters();
+        }
+
+        // Ordenar productos
+        function sortProducts() {
+            switch(sortBy) {
+                case 'price-asc':
+                    filteredProducts.sort((a, b) => a.price - b.price);
+                    break;
+                case 'price-desc':
+                    filteredProducts.sort((a, b) => b.price - a.price);
+                    break;
+                case 'newest':
+                    // Asumimos que los productos más nuevos tienen IDs más altos
+                    filteredProducts.sort((a, b) => b.id - a.id);
+                    break;
+                case 'rating':
+                    filteredProducts.sort((a, b) => b.rating - a.rating);
+                    break;
+                case 'popular':
+                default:
+                    // Orden por defecto (podría ser por popularidad, pero usaremos ID)
+                    filteredProducts.sort((a, b) => a.id - b.id);
+                    break;
+            }
+        }
+
+        // Renderizar productos
+        function renderProducts() {
+            // Calcular índices para la paginación
+            const startIndex = (currentPage - 1) * productsPerPage;
+            const endIndex = startIndex + productsPerPage;
+            const productsToShow = filteredProducts.slice(startIndex, endIndex);
+            
+            // Limpiar grid
+            productGrid.innerHTML = '';
+            
+            // Mostrar productos
+            productsToShow.forEach(product => {
+                const productCard = createProductCard(product);
+                productGrid.appendChild(productCard);
+            });
+            
+            // Actualizar contadores
+            showingCount.textContent = filteredProducts.length;
+            
+            // Reconfigurar event listeners para los nuevos botones
+            setupProductEventListeners();
+        }
+
+        // Crear tarjeta de producto
+        function createProductCard(product) {
+            const card = document.createElement('div');
+            card.className = 'product-card bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:border-primary-500 transition-all';
+            
+            // Generar estrellas de rating
+            const stars = [];
+            const fullStars = Math.floor(product.rating);
+            const hasHalfStar = product.rating % 1 >= 0.5;
+            
+            for (let i = 0; i < fullStars; i++) {
+                stars.push('<i class="fas fa-star"></i>');
+            }
+            
+            if (hasHalfStar) {
+                stars.push('<i class="fas fa-star-half-alt"></i>');
+            }
+            
+            const emptyStars = 5 - stars.length;
+            for (let i = 0; i < emptyStars; i++) {
+                stars.push('<i class="far fa-star"></i>');
+            }
+            
+            // Badge (nuevo o descuento)
+            let badge = '';
+            if (product.isNew) {
+                badge = `<div class="absolute bottom-2 left-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            Nuevo
+                        </div>`;
+            } else if (product.isOffer) {
+                badge = `<div class="absolute bottom-2 left-2 bg-primary-500 text-white text-xs font-bold px-2 py-1 rounded">
+                            -${product.discount}%
+                        </div>`;
+            }
+            
+            // Precio antiguo (si hay descuento)
+            const oldPrice = product.oldPrice ? 
+                `<p class="text-xs text-gray-400 line-through">S/${product.oldPrice.toFixed(2)}</p>` : '';
+            
+            card.innerHTML = `
+                <div class="relative">
+                    <img src="${product.image}" 
+                         alt="${product.name}" 
+                         class="w-full h-64 object-cover">
+                    <div class="absolute top-2 right-2">
+                        <button class="wishlist-btn p-2 bg-white rounded-full shadow-md hover:bg-primary-50 text-gray-600 hover:text-primary-500 transition-colors">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    ${badge}
+                </div>
+                <div class="p-4">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-gray-800 mb-1">${product.name}</h3>
+                            <p class="text-sm text-gray-600 mb-2">${product.description}</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-bold text-primary-500">S/${product.price.toFixed(2)}</p>
+                            ${oldPrice}
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-2 mb-3">
+                        <div class="flex text-yellow-400">
+                            ${stars.join('')}
+                        </div>
+                        <span class="text-xs text-gray-500 ml-1">(${product.reviews})</span>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="add-to-cart-btn flex-1 bg-primary-500 hover:bg-primary-600 text-white py-2 px-4 rounded-md transition-colors text-sm">
+                            Añadir al carrito
+                        </button>
+                        <button class="w-10 h-10 flex items-center justify-center border border-primary-500 text-primary-500 hover:bg-primary-50 rounded-md transition-colors">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Configurar event listeners para productos (después de renderizar)
+        function setupProductEventListeners() {
+            // Wishlist
+            const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+            
+            wishlistButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('far');
+                    icon.classList.toggle('fas');
+                    icon.classList.toggle('text-primary-500');
+                    
+                    // Actualizar contador
+                    const wishlistCounter = document.querySelector('#wishlist-btn span');
+                    if (icon.classList.contains('fas')) {
+                        wishlistCounter.textContent = parseInt(wishlistCounter.textContent) + 1;
+                    } else {
+                        wishlistCounter.textContent = parseInt(wishlistCounter.textContent) - 1;
+                    }
+                });
+            });
+
+            // Botones "Añadir al carrito"
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Animación
+                    const originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check mr-1"></i> Añadido';
+                    this.classList.remove('bg-primary-500');
+                    this.classList.add('bg-green-500');
+                    
+                    // Actualizar contador del carrito
+                    const cartCounter = document.querySelector('#cart-btn span');
+                    cartCounter.textContent = parseInt(cartCounter.textContent) + 1;
+                    
+                    // Resetear después de 2 segundos
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.classList.add('bg-primary-500');
+                        this.classList.remove('bg-green-500');
+                    }, 2000);
+                });
+            });
+        }
+
+        // Actualizar UI de paginación
+        function updatePaginationUI() {
+            const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+            const paginationButtons = document.querySelectorAll('.pagination-btn');
+            
+            // Desactivar botones de prev/next si es necesario
+            document.querySelector('.pagination-btn[data-page="prev"]').classList.toggle('opacity-50', currentPage === 1);
+            document.querySelector('.pagination-btn[data-page="next"]').classList.toggle('opacity-50', currentPage === totalPages);
+            
+            // Actualizar botones numéricos
+            paginationButtons.forEach(button => {
+                const page = button.getAttribute('data-page');
+                
+                if (!isNaN(page)) {
+                    button.classList.toggle('hidden', parseInt(page) > totalPages);
+                    
+                    if (parseInt(page) === currentPage) {
+                        button.classList.add('bg-primary-500', 'text-white');
+                        button.classList.remove('border', 'border-gray-200', 'text-gray-700');
+                    } else {
+                        button.classList.remove('bg-primary-500', 'text-white');
+                        button.classList.add('border', 'border-gray-200', 'text-gray-700');
+                    }
+                }
+            });
+        }
+
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Zapateria Ardillita</title>
+    <meta name="description" content="Contáctanos para cualquier consulta sobre nuestros zapatitos para bebés. Estamos aquí para ayudarte.">
+    
+    <!-- Preload de fuentes y recursos críticos -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    
+    <!-- Favicon y meta tags para redes sociales -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#FFB6C1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zapateriaardillita.com/contacto">
+    <meta property="og:title" content="Contacto | Zapateria Ardillita">
+    <meta property="og:description" content="Contáctanos para cualquier consulta sobre nuestros zapatitos para bebés. Estamos aquí para ayudarte.">
+    <meta property="og:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zapateriaardillita.com/contacto">
+    <meta property="twitter:title" content="Contacto | Zapateria Ardillita">
+    <meta property="twitter:description" content="Contáctanos para cualquier consulta sobre nuestros zapatitos para bebés. Estamos aquí para ayudarte.">
+    <meta property="twitter:image" content="https://zapateriaardillita.com/images/social-share.jpg">
+
+    <link rel="shortcut icon" href="assets/img/HERO/ardilla.png" type="image/x-icon">
+
+    <!-- Tailwind CSS con configuración personalizada -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#FFF0F3',
+                            100: '#FFD6E0',
+                            200: '#FFB6C1',
+                            300: '#FF8FA3',
+                            400: '#FF758F',
+                            500: '#FF477E',
+                            600: '#EB0055',
+                            700: '#C7004C',
+                            800: '#A80040',
+                            900: '#870033',
+                            1000: '#25D366',
+                        },
+                        secondary: {
+                            50: '#F0F9FF',
+                            100: '#E0F2FE',
+                            200: '#BAE6FD',
+                            300: '#7DD3FC',
+                            400: '#38BDF8',
+                            500: '#0EA5E9',
+                            600: '#0284C7',
+                            700: '#0369A1',
+                            800: '#075985',
+                            900: '#0C4A6E',
+                            1000: '#FF477E',
+                        },
+                        accent: {
+                            50: '#F5F3FF',
+                            100: '#EDE9FE',
+                            200: '#DDD6FE',
+                            300: '#C4B5FD',
+                            400: '#A78BFA',
+                            500: '#8B5CF6',
+                            600: '#7C3AED',
+                            700: '#6D28D9',
+                            800: '#5B21B6',
+                            900: '#4C1D95',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- CSS personalizado optimizado -->
+    <style>
+    /* Estilos base optimizados */
+    body {
+        background-color: #fff;
+        color: #374151;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        text-rendering: optimizeLegibility;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', 'Quicksand', sans-serif;
+        color: #1f2937;
+        letter-spacing: -0.015em;
+    }
+
+    .transition-all-slow {
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .shadow-soft {
+        box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.1);
+    }
+
+    .shadow-hover {
+        box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.15);
+    }
+
+    .glass {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        background-color: rgba(255, 255, 255, 0.85);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .img-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img-contain {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    @keyframes wiggle {
+        0%, 100% { transform: rotate(-3deg); }
+        50% { transform: rotate(3deg); }
+    }
+
+    .animate-wiggle {
+        animation: wiggle 1s ease-in-out infinite;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .wave svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+
+    .wave .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    .mobile-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    .mobile-menu.open .skeleton {
+        background-color: #e5e7eb; 
+        animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .skeleton {
+        background-color: #e5e7eb;
+        animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .product-card {
+        perspective: 1000px;
+    }
+
+    .product-inner {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .product-card:hover .product-inner {
+        transform: rotateY(10deg);
+    }
+
+    .neon-effect {
+        text-shadow: 0 0 5px rgba(255, 182, 193, 0.5), 0 0 10px rgba(255, 182, 193, 0.3);
+    }
+
+    .gradient-animate {
+        background-size: 200% 200%;
+        animation: gradient 3s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Estilos específicos para la página de contacto */
+    .contact-hero {
+        background: linear-gradient(135deg, rgba(255,182,193,0.1) 0%, rgba(255,255,255,0.8) 100%);
+    }
+
+    .contact-card {
+        transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .form-input {
+        transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+        border-color: #FF477E;
+        box-shadow: 0 0 0 3px rgba(255, 71, 126, 0.2);
+    }
+
+    .map-container {
+        height: 400px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+        .map-container {
+            height: 300px;
+        }
+    }
+</style>
+</head>
+<body class="relative">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500">
+        <div class="relative w-24 h-24 mb-4">
+            <div class="absolute inset-0 rounded-full border-4 border-t-primary-500 border-r-primary-300 border-b-primary-400 border-l-primary-200 animate-spin"></div>
+            <div class="absolute inset-4 rounded-full border-4 border-transparent"></div>
+            <div class="absolute inset-8 flex items-center justify-center">
+                <img 
+                    src="../assets/img/HERO/ardilla.png" 
+                    alt="Icono Ardillita"
+                    class="w-10 h-10 animate-pulse-slow"
+                >
+            </div>
+        </div>
+        <h2 class="text-xl font-heading text-gray-700">Zapateria Ardillita...</h2>
+    </div>
+
+    <!-- Header/Navbar -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 lg:px-6">
+            <div class="flex justify-between items-center py-3">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <span class="text-2xl font-heading font-bold text-gray-800">Zapateria<span class="text-primary-500">Ardillita</span></span>
+                </a>
+                
+                <!-- Menú principal desktop -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="../index.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Inicio</a>
+                    <a href="ninos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niños</a>
+                    <a href="ninas.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Niñas</a>
+                    <a href="nacidos.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Recien Nacidos</a>
+                    <a href="caminantes.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Caminantes</a>
+                    <a href="nosotros.html" class="px-4 py-2 text-gray-700 hover:text-primary-500 font-medium transition-all">Nosotros</a>
+                    <a href="contacto.html" class="px-4 py-2 text-primary-500 font-medium transition-all">Contacto</a>
+                </nav>
+                
+                <!-- Iconos de acción -->
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="wishlist-btn">
+                        <i class="far fa-heart text-xl"></i>
+                    </button>
+                    
+                    <button class="p-2 text-gray-600 hover:text-primary-500 relative" id="cart-btn">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                    </button>
+                    
+                    <button class="p-2 text-gray-600 hover:text-primary-500 lg:hidden" id="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                    
+                    <a href="#" class="hidden md:flex items-center space-x-1 bg-gradient-to-r from-primary-400 to-primary-600 text-white px-4 py-2 rounded-full shadow-md hover:shadow-lg transition-all hover:scale-105">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Mi Cuenta</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="mobile-menu lg:hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-3">
+                <div class="grid grid-cols-1 divide-y divide-gray-100">
+                    <a href="index.html" class="py-3 text-gray-700 font-medium">Inicio</a>
+                    <a href="#" class="py-3 text-gray-700 font-medium">Niños</a>
+                    <a href="#" class="py-3 text-gray-700 font-medium">Niñas</a>
+                    <a href="#" class="py-3 text-gray-700 font-medium">Primeros Pasos</a>
+                    <a href="#" class="py-3 text-gray-700 font-medium">Caminantes</a>
+                    <a href="nosotros.html" class="py-3 text-gray-700 font-medium">Nosotros</a>
+                    <a href="contacto.html" class="py-3 text-primary-500 font-medium">Contacto</a>
+                    
+                    <div class="py-3 flex space-x-4">
+                        <a href="#" class="bg-secondary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fas fa-store mr-2"></i>Tienda
+                        </a>
+                        <a href="#" class="bg-primary-1000 text-white px-4 py-2 rounded-full text-sm font-medium flex-1 text-center">
+                            <i class="fab fa-whatsapp mr-2"></i> Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="contact-hero py-20 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-7xl text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 animate-fade-in">
+                    Contácta<span class="text-primary-500">nos</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    ¿Tienes alguna pregunta? Estamos aquí para ayudarte. Completa el formulario o contáctanos directamente.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#form-contact" class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-lg">
+                        Envíanos un mensaje
+                    </a>
+                    <a href="tel:+1234567890" class="border-2 border-primary-500 text-primary-500 hover:bg-primary-50 px-6 py-3 rounded-full font-medium transition-all">
+                        <i class="fas fa-phone-alt mr-2"></i>Llamar ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Información de contacto -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="container mx-auto max-w-7xl">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Tarjeta 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md contact-card">
+                        <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-map-marker-alt text-primary-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Visítanos</h3>
+                        <p class="text-gray-600 text-center">
+                            Calle Ficticia 123<br>
+                            Ciudad Imaginaria<br>
+                            CP 12345
+                        </p>
+                        <div class="mt-6 text-center">
+                            <a href="#map" class="text-primary-500 hover:text-primary-600 font-medium inline-flex items-center">
+                                Ver en mapa <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md contact-card">
+                        <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-phone-alt text-primary-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Llama o escribe</h3>
+                        <p class="text-gray-600 text-center mb-2">
+                            <a href="tel:+1234567890" class="hover:text-primary-500">+1 234 567 890</a>
+                        </p>
+                        <p class="text-gray-600 text-center">
+                            <a href="mailto:info@zapateriaardillita.com" class="hover:text-primary-500">info@zapateriaardillita.com</a>
+                        </p>
+                        <div class="mt-6 text-center">
+                            <a href="https://wa.me/1234567890" class="bg-primary-1000 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium inline-flex items-center">
+                                <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md contact-card">
+                        <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+                            <i class="fas fa-clock text-primary-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center text-gray-800 mb-3">Horario</h3>
+                        <p class="text-gray-600 text-center">
+                            <strong>Lunes a Viernes:</strong> 9:00 - 18:00<br>
+                            <strong>Sábados:</strong> 10:00 - 14:00<br>
+                            <strong>Domingos:</strong> Cerrado
+                        </p>
+                        <div class="mt-6 text-center">
+                            <a href="#" class="text-primary-500 hover:text-primary-600 font-medium inline-flex items-center">
+                                Ver horarios especiales <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto y mapa -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto max-w-7xl">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Formulario -->
+                    <div id="form-contact">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Envíanos un mensaje</h2>
+                        <p class="text-gray-600 mb-8">
+                            Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible. Todos los campos son obligatorios.
+                        </p>
+                        
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                                    <input type="text" id="name" name="name" required 
+                                           class="w-full px-4 py-3 rounded-lg border border-gray-300 form-input focus:ring-primary-500 focus:border-primary-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+                                    <input type="email" id="email" name="email" required 
+                                           class="w-full px-4 py-3 rounded-lg border border-gray-300 form-input focus:ring-primary-500 focus:border-primary-500">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" 
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 form-input focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
+                                <select id="subject" name="subject" required 
+                                        class="w-full px-4 py-3 rounded-lg border border-gray-300 form-input focus:ring-primary-500 focus:border-primary-500">
+                                    <option value="" disabled selected>Selecciona un asunto</option>
+                                    <option value="Consulta general">Consulta general</option>
+                                    <option value="Pedido especial">Pedido especial</option>
+                                    <option value="Problema con mi pedido">Problema con mi pedido</option>
+                                    <option value="Devolución o cambio">Devolución o cambio</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          class="w-full px-4 py-3 rounded-lg border border-gray-300 form-input focus:ring-primary-500 focus:border-primary-500"></textarea>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" id="newsletter" name="newsletter" 
+                                       class="h-4 w-4 text-primary-500 focus:ring-primary-500 border-gray-300 rounded">
+                                <label for="newsletter" class="ml-2 block text-sm text-gray-700">
+                                    Deseo recibir novedades y promociones por correo electrónico
+                                </label>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" 
+                                        class="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-all shadow-md hover:shadow-lg">
+                                    Enviar mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Mapa -->
+                    <div id="map" class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215573291234!2d-73.98784492423916!3d40.74844047138988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMDkuNyJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="container mx-auto max-w-5xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Preguntas <span class="text-primary-500">frecuentes</span></h2>
+                    <p class="text-gray-600">Aquí respondemos a las dudas más comunes de nuestros clientes.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <!-- Pregunta 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-medium text-gray-800">¿Cuál es el tiempo de entrega de los pedidos?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                El tiempo de entrega estándar es de 3 a 5 días hábiles para envíos nacionales. Para pedidos internacionales, el tiempo de entrega puede variar entre 7 y 14 días hábiles dependiendo del destino.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-medium text-gray-800">¿Qué métodos de pago aceptan?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                Aceptamos tarjetas de crédito/débito (Visa, MasterCard, American Express), PayPal, transferencias bancarias y pagos en efectivo al momento de la entrega (solo para pedidos locales).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-medium text-gray-800">¿Cómo sé qué talla elegir para mi bebé?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                En nuestra página de tallas encontrarás una guía detallada para medir el pie de tu bebé. Si necesitas ayuda adicional, nuestro equipo de atención al cliente estará encantado de asesorarte.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-medium text-gray-800">¿Hacen zapatitos personalizados?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                Sí, ofrecemos servicio de personalización. Puedes elegir colores, materiales y agregar iniciales. El tiempo de producción para pedidos personalizados es de 7 a 10 días hábiles adicionales.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pregunta 5 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left">
+                            <h3 class="text-lg font-medium text-gray-800">¿Cuál es su política de devoluciones?</h3>
+                            <i class="fas fa-chevron-down text-primary-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">
+                                Aceptamos devoluciones dentro de los 14 días posteriores a la recepción del pedido. Los productos deben estar en su estado original, sin usar y con el empaque intacto. El costo del envío de devolución correrá por cuenta del cliente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 mb-4">¿No encontraste lo que buscabas?</p>
+                    <a href="#form-contact" class="inline-flex items-center text-primary-500 hover:text-primary-600 font-medium">
+                        Contáctanos directamente <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Logo y descripción -->
+                <div>
+                    <a href="#" class="flex items-center space-x-2 mb-6">
+                        <span class="text-2xl font-heading font-bold text-white">Zapateria<span class="text-primary-500">Ardillita</span></span>
+                    </a>
+                    <p class="text-gray-400 mb-6">
+                        Zapatitos artesanales para los primeros pasos de tu bebé. Hechos con amor y materiales de la más alta calidad.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-pinterest-p text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces rápidos -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Enlaces Rápidos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary-500 transition-colors">Inicio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Tienda</a></li>
+                        <li><a href="nosotros.html" class="text-gray-400 hover:text-primary-500 transition-colors">Nosotros</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Blog</a></li>
+                        <li><a href="contacto.html" class="text-primary-500 hover:text-primary-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Categorías -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Categorías</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Primeros Pasos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Caminantes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Niñas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Niños</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary-500 transition-colors">Edición Limitada</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contacto -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contacto</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary-500"></i>
+                            <span>Calle Ficticia 123, Ciudad Imaginaria</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone-alt text-primary-500"></i>
+                            <span>+1 234 567 890</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-primary-500"></i>
+                            <span>info@zapateriaardillita.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-clock text-primary-500"></i>
+                            <span>Lun-Vie: 9am - 6pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    &copy; 2023 Zapateria Ardillita. Todos los derechos reservados.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-primary-500 text-sm transition-colors">Términos y Condiciones</a>
+                    <a href="#" class="text-gray-500 hover:text-primary-500 text-sm transition-colors">Política de Privacidad</a>
+                    <a href="#" class="text-gray-500 hover:text-primary-500 text-sm transition-colors">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+
+            // Ajustar la altura para animar el menú
+            if (mobileMenu.classList.contains('open')) {
+                mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+            } else {
+                mobileMenu.style.maxHeight = '0';
+            }
+
+            // Cambiar icono
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Cerrar menú móvil si está abierto
+                    if (mobileMenu.classList.contains('open')) {
+                        mobileMenu.classList.remove('open');
+                        mobileMenu.style.maxHeight = '0';
+                        const icon = mobileMenuButton.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+
+        // Formulario de contacto
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Aquí iría la lógica para enviar el formulario
+                // Por ahora solo mostramos una alerta
+                alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
